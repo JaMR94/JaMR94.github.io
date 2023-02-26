@@ -89,3 +89,26 @@ a {
     color-scheme: dark;
   }
 }
+
+/* estilos de pudin */
+.uwu{
+  color: black;
+}
+.space{
+  padding-bottom: 100px;
+  background-color: cornsilk;
+}
+.dream{
+  background-image: url(../images/placer.jpg);
+  padding-bottom: 150px;
+  padding-top: 200px;
+}
+.mid{
+  text-align: center;
+}
+.card-body{
+  background-image: url(../images/placer\ 2.jpg);
+  padding-bottom: 400px;
+  background-size: cover;
+}
+/* fin de estilos de pudin */
