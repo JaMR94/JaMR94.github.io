@@ -63,7 +63,7 @@
   }
 }
 
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -88,7 +88,7 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */
 
 /* estilos de pudin */
 .uwu{
@@ -96,19 +96,112 @@ a {
 }
 .space{
   padding-bottom: 100px;
-  background-color: cornsilk;
+  padding-left: 7%
 }
 .dream{
   background-image: url(../images/placer.jpg);
-  padding-bottom: 150px;
-  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-top: 150px;
 }
 .mid{
   text-align: center;
 }
-.card-body{
+.card{
   background-image: url(../images/placer\ 2.jpg);
-  padding-bottom: 400px;
+  background-size: auto;
+  width: 450px;
+  height: 600px;
   background-size: cover;
+  border-color: white;
+}
+.card h5{
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+.card p{
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+.test{
+  padding-left: 10px;
+  color: white;
+}
+.der{
+  padding-left: 70%;
+  padding-top: 10px;
+}
+.Espacio{
+  padding-bottom: 20px;
+  padding-top: 100px;
+  font-size: 40px;
+}
+.Espacio2{
+  padding-bottom: 40px;
+  color: #666565;
+  font-size: 20px;
+
+}
+.Espacio3{
+  padding-top: 40px;
+  padding-bottom: 150px;
+  color: #666565;
+  font-size: 13px;
+}
+.btn{
+  background-color: white;
+  border-color: white;
+  color: black;
+  width: 150px;
+  height: 50px;
+}
+.feat1{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.feat1 h2{
+  padding-bottom: 1%;
+}
+.boton{
+  position: absolute;
+  bottom: 30px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+.boton1{
+  padding-left: 10px;
+}
+.biger{
+  color: black;
+  text-decoration-color: #00000000;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 4%;
+}
+.links{
+  text-decoration-color: #00000000;
+  color: rgb(83, 83, 83);
+}
+.a{
+  padding-top: 1%;
+}
+.font1{
+  font-size: 60px;
+}
+.font2{
+  font-size: 20px;
+  color: #666565;
+  padding-bottom: 2%;
+}
+.font3{
+  font-size: 20px;
+  color: #666565;
+}
+.font6{
+  color: #666565;
 }
 /* fin de estilos de pudin */
