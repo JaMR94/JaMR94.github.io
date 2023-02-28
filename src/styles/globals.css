@@ -109,7 +109,7 @@ a {
 .card{
   background-image: url(../images/placer\ 2.jpg);
   background-size: auto;
-  width: 450px;
+  width: 400px;
   height: 600px;
   background-size: cover;
   border-color: white;
@@ -125,7 +125,6 @@ a {
   left: 20px;
 }
 .test{
-  padding-left: 10px;
   color: white;
 }
 .der{
@@ -177,7 +176,6 @@ a {
 }
 .biger{
   color: black;
-  text-decoration-color: #00000000;
   font-size: 20px;
   font-weight: 700;
   padding-left: 4%;
