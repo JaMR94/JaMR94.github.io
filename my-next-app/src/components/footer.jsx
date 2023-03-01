@@ -1,52 +1,61 @@
+import Link from 'next/link'
+import Image from 'next/image'
+
+
 const Footer  = () => {
 
     return(
-        <div className="footer">
-            <div className="footer_img">
-                <image src="" alt="Logo" />
-            </div>
-            <div className="footer-text">
-                <div className="item">
-                    <ul>
-                        <li className="list">MENU</li>
-                        <link href="/home"/><p className="item-title">Home</p>
-                        <link href="/about"/><p className="item-title">About</p>
-                        <link href="/contact"/><p className="item-title">Contact</p>
-                        <link href="/products"/><p className="item-title">Products</p>
-                        <link href="/blog"/><p className="item-title">Blog</p>
-                        <link href="/styleguide"/><p className="item-title">Styleguide</p>
-                    </ul>
-                </div>
-                <div className="item">
-                    <ul>
-                        <li className="list">CATEGORIES</li>
-                        <link href="/categorie"/><p className="item-title">Categorie 1</p>
-                        <link href="/categorie"/><p className="item-title">Categorie 2</p>
-                        <link href="/categorie"/><p className="item-title">Categorie 3</p>
-                        <link href="/categorie"/><p className="item-title">Categorie 4</p>
-                    </ul>
-                </div>
-                <div className="item">
-                    <ul>
-                        <li className="list">HELP</li>
-                        <link href=""/><p className="item-title">Shipping</p>
-                        <link href=""/><p className="item-title">Returns & Exchange</p>
-                        <link href=""/><p className="item-title">Product Care</p>
-                    </ul>
-                </div>
-                <div className="item">
-                    <ul>
-                        <li className="list">FOLLOW</li>
-                        <link href=""/><p className="item-title">Instagram</p>
-                        <link href=""/><p className="item-title">Facebook</p>
-                        <link href=""/><p className="item-title">Twitter</p>
-                    </ul>  
+        <footer>
+            
+            <div className="container footer">    
+                <div className="row">
+                    <div className="col-lg-4">
+                        <div className="imgen">
+                            <Link href="/">
+                                <Image src="" alt="logo" />
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="col-log-2 list">
+                        <div className="columna">
+                            <h5 className="title-item">HOME</h5>
+                            <p><Link className="item" href="/">Home</Link></p>
+                            <p><Link className="item" href="/">About</Link></p>
+                            <p><Link className="item" href="/">Contact</Link></p>
+                            <p><Link className="item" href="/">Products</Link></p>  
+                        </div>
+                    </div>
+                    <div className="col-log-2 list">
+                        <div className="columna">
+                            <h5 className="title-item">CATEGORIE</h5>
+                            <p><Link className="item" href="/">Categorie 1</Link></p>
+                            <p><Link className="item" href="/">Categorie 2</Link></p>
+                            <p><Link className="item" href="/">Categorie 3</Link></p>
+                            <p><Link className="item" href="/">Categorie 4</Link></p>
+                        </div>
+                    </div>
+                    <div className="col-log-2 list">
+                        <div className="columna">
+                            <h5 className="title-item">HELP</h5>
+                            <p><Link className="item" href="/">Shipping</Link></p>
+                            <p><Link className="item" href="/">Returns & Exchange</Link></p>
+                            <p><Link className="item" href="/">Product Care</Link></p>   
+                        </div>
+                    </div>
+                    <div className="col-log-2 list">
+                        <div className="columna">
+                            <h5 className="title-item">FOLLOW</h5>
+                            <p><Link className="item" href="">Instagram</Link></p>
+                            <p><Link className="item" href="">Facebook</Link></p>
+                            <p><Link className="item" href="">Twitter</Link></p> 
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="copyright">
                 <p>Copyright &copy; 2023</p>
             </div>
-        </div>
+        </footer>
     )
 }
 

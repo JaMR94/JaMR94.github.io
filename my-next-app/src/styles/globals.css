@@ -1,76 +1,102 @@
-.content3{
-  font-family: 'Montserrat' ;
-  font-weight:normal;
+.container{
+  --font-mono: 'Montserrat', san seri ;
   font-style:normal;
   text-align: center;
   background-color: rgba(199, 199, 199, 0.74);
   color: #1a1b1f;
-  margin: auto;
   padding-top: 130px;
   padding-bottom: 140px
 }
 
-.h2{
-  font-size: 36px;  
+
+.h1{
+  font-size: 36px; 
 }
 
 .suscribe{
-  margin: 15px auto;
-  width: 40%;
+  margin: auto ;
 }
 
+.phrase_news{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+}
+p.news{
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+.news{
+  margin-top: 3%;
+}
 .enteremail{
-  width: 336px;
-  height: 30px;
-  margin-right: 10px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  padding-left: 20px;
-  padding-right: 20px;
+  --font-mono:'Montserrat-BoldItalic';
+  background-color: white;
+  border-color: #e4e4e4;
+  width: 30%;
+  height: auto;
+  margin: auto;
+  margin-right: 15px;
+  text-align: left;
+  padding: 12px;
 }
 
 .submit{
+  --font-mono: "Montserrat";
   background-color: #1a1b1f;
+  font-size: 12px;;
   color: #fff;
-  height: 20px;
-  margin-right: 10px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 25px;
-  padding-right: 25px;
+  border-color: rgba(199, 199, 199, 0.74);
+  width: 100px;
+  height: 43px;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
+
 .footer{
-  font-family:'Montserrat',sans-ser;
-  font-weight:normal;
-  font-style:normal;
+  --font-mono:'Montserrat';
+  background-color: #fff;
   padding-top: 120px;
   padding-bottom: 60px;
 }
 
-.footer-text{
-  display: flex;
-  align-content: center;
-  justify-content: right;
-  margin-right: 50px;
-  
+.imgen{
+  width: auto;
+  height: auto;
+  margin: auto;
+  float: left;
+  margin-left: 7.5%;
 }
 
-.list{
-  list-style: none;
-  padding-bottom: 15px;
+container.footer{
+  margin: auto;
+}
+
+.columna{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h5.title-item{
+  font-size: 14px;
+  font-weight: bold;
   text-align: left;
 }
 
 .item{
-  margin-right: 60px;
-}
-
-.item-title{
-  padding-bottom: 15px;
+  font-size: 12px;
+  text-align: left;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .copyright{
+  font-size: 12px;
   text-align: left;
   margin-top: 100px;
   margin-left: 80px;
