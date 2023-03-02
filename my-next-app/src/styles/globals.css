@@ -1,103 +1,124 @@
-.container{
-  --font-mono: 'Montserrat', san seri ;
-  font-style:normal;
+.container-fluid{
+  --font-mono: 'Montserrat';
   text-align: center;
-  background-color: rgba(199, 199, 199, 0.74);
-  color: #1a1b1f;
+  background-color: #616161;
+  color: #f5f5f5;
   padding-top: 130px;
   padding-bottom: 140px
 }
 
-
-.h1{
-  font-size: 36px; 
+h2.monthly{
+  font-size: 36px;
+  letter-spacing: 1px; 
 }
 
 .suscribe{
   margin: auto ;
+  align-content: center ;
 }
 
 .phrase_news{
+  line-height: 30px;
   margin: auto;
   display: flex;
   flex-direction: column;
-  width: 46%;
+  width: 50%;
 }
-p.news{
-  font-size: 14px;
+
+.p.news{
+  font-size: 12px;
   letter-spacing: 1px;
-  line-height: 28px;
+  margin-left: 15%;
 }
+
 .news{
   margin-top: 3%;
 }
+
 .enteremail{
   --font-mono:'Montserrat-BoldItalic';
-  background-color: white;
-  border-color: #e4e4e4;
-  width: 30%;
+  font-size: small;
+  background-color: #fff;
+  border-color: #616161;
+  width: 50%;
   height: auto;
   margin: auto;
   margin-right: 15px;
   text-align: left;
-  padding: 12px;
+  padding: 13px;
 }
 
 .submit{
-  --font-mono: "Montserrat";
-  background-color: #1a1b1f;
-  font-size: 12px;;
+  --font-mono: 'Montserrat';
+  background-color: #cf0e0e;
+  font-size: 12px;
   color: #fff;
-  border-color: rgba(199, 199, 199, 0.74);
+  border-color: #616161 ;
   width: 100px;
-  height: 43px;
+  height: 50px;
   margin: auto;
   text-align: center;
   letter-spacing: 2px;
 }
 
+.submit:hover{
+  background: #616161e5;
+}
 
-.footer{
+
+
+
+.container.footer{
   --font-mono:'Montserrat';
   background-color: #fff;
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
+  margin: auto;
 }
 
 .imgen{
-  width: auto;
-  height: auto;
   margin: auto;
   float: left;
   margin-left: 7.5%;
 }
 
-container.footer{
-  margin: auto;
-}
-
-.columna{
+.seccion{
   align-items: center;
   display: flex;
   flex-direction: column;
+  text-align: left;
+  line-height: 10px;
 }
 
-h5.title-item{
+.titulo{
+  color: #222021;
   font-size: 14px;
+  padding-top: 20;
+  padding-bottom: 10px;
   font-weight: bold;
-  text-align: left;
 }
 
 .item{
+  color: #616161;
   font-size: 12px;
-  text-align: left;
   color: inherit;
   text-decoration: inherit;
+  margin: auto;
+  margin-bottom: 5px;
+  padding: 0%;
+}
+
+.item:hover{
+  color: #cf0e0e;
+  font-weight: bold;
 }
 
 .copyright{
+  color: #cf0e0e;
+  font-weight: bold;
   font-size: 12px;
   text-align: left;
-  margin-top: 100px;
-  margin-left: 80px;
+  margin-left: 90px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
