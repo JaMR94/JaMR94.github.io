@@ -11,19 +11,19 @@ const Navbar = () => {
         <div className="collapse navbar-collapse ">
           <ul className="navbar-nav der">
             <li className="nav-item">
-              <Link href="/products" className="links">
+              <Link href="/" className="links">
                 {" "}
                 <p className="nav-link">Products</p>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/about" className="links">
+              <Link href="/" className="links">
                 {" "}
                 <p className="nav-link">About</p>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/contact" className="links">
+              <Link href="/" className="links">
                 {" "}
                 <p className="nav-link">contact</p>
               </Link>
