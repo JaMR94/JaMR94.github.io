@@ -2,16 +2,13 @@ const Aboutimg = () => {
     return (
       <main>
            <div className="container">
-        <div className="row ">
-      <div className="img">
+      <div className="imgabout">
       </div>
-      </div>
+      
       </div>
 
-      <div className="container">
-        <div className="row ">  
-      <div className="img2">
-      </div>
+      <div className="container"> 
+      <div className="img2about">
       </div>
       </div>
       </main>

@@ -91,41 +91,43 @@ a {
 }
 /*------------------------------------ABOUT US START -----------------------*/
 .about{
-  background-image: url(../img/example.jpg);
-  padding-bottom: 7cm;
+  background-image: url(../images/example.jpg);
+  height: 460px;
   
 }
-.text{
-  padding-top: 15px;
+.textabout{
+padding-top: 15px;
 color: rgb(55, 55, 55);
 }
-.text2{
-  text-align: justify;
+.text2about{
+text-align: justify;
 color: rgb(55, 55, 55);
+
+
 }
-.title{
+.titleabout{
   padding-top: 170px;
   color:rgb(253, 253, 253);
 }
 
 .subt{
-  padding-top: 80px;
+  margin-top: 80px;
   color:black;
 }
-.img{
-  background-image: url(../img/exa2.jpg);
+.imgabout{
+  background-image: url(../images/exa2.jpg);
   width: 550px;
   height: 460px;
   margin-bottom: 50px;
 }
-.img2{
-  background-image: url(../img/exa2.jpg);
-  padding-bottom: 460px;
+.img2about{
+  background-image: url(../images/exa2.jpg);
+  height: 460px;
 
 }
 .our{
-  padding-top: 75px;
-  padding-bottom: 75px;
+  margin-top: 75px;
+  margin-bottom: 75px;
   color: black;
 }
 /* ---------------------------------ABOUT US END -----------------------------*/
