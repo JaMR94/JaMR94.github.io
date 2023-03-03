@@ -1,0 +1,63 @@
+
+  h2.monthly{
+    font-size: 36px;
+    letter-spacing: 1px; 
+  }
+  
+  .suscribe{
+    margin: auto ;
+    align-content: center ;
+  }
+  
+  .phrase_news{
+    line-height: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .p.news{
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-left: 15%;
+  }
+  
+  .news{
+    margin-top: 3%;
+  }
+
+  .email{
+    margin: 30px;
+  }
+  
+  .enteremail{
+    --font-mono:'Montserrat-BoldItalic';
+    font-size: small;
+    background-color: #fff;
+    border-color: #b3b3b3;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-right: 15px;
+    text-align: left;
+    padding: 13px;
+  }
+  
+  .submit{
+    --font-mono: 'Montserrat';
+    background-color: #cf0e0e;
+    font-size: 12px;
+    color: #fff;
+    border-color: #616161 ;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  .submit:hover{
+    background: #616161e5;
+  }
+  
