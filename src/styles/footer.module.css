@@ -1,0 +1,53 @@
+
+.container_footer{
+    --font-mono:'Montserrat';
+    background-color: #fff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+  }
+  
+  .imgen{
+    margin: auto;
+    float: left;
+    margin-left: 12%;
+  }
+  
+  .columna{
+  line-height:20px;    
+}
+  
+  .titulo{
+    color: #222021;
+    font-size: 16px;
+    padding-top: 20;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .item{
+    color: #616161;
+    font-size: 14px;
+    color: inherit;
+    text-decoration: inherit;
+    padding: 0%;
+  }
+  
+  .item:hover{
+    color: #cf0e0e;
+    font-weight: bold;
+  }
+  
+  .copyright{
+    color: #cf0e0e;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
+    padding-left:22px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 22px;
+  }
+  
