@@ -3,7 +3,7 @@ import React from "react";
 const Dreamstore = () => {
   return (
     <div>
-      <div className="dream container ">
+      <div className="dream ">
         <h1 className="text-center font1">Build your dream store</h1>
         <p className="text-center font2">
           A simple Webflow Ecommerce template to get you started.
