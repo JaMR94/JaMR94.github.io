@@ -75,9 +75,9 @@ body {
   overflow-x: hidden;
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
-}
+} */
 
 a {
   color: inherit;
