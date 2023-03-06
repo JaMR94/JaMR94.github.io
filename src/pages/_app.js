@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import '@/styles/Test.css'
+import '@/styles/inicio.css'
 import '@/styles/About.css'
 import '@/styles/Login&Register.css'
 import '@/styles/header.css'
