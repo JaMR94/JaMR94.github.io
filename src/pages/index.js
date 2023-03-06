@@ -20,9 +20,9 @@ export default function Home() {
         <Features />
         <menunav />
         <Cardsection />
-      </Layout>
         <Monthly/>
         <Footer/>
+      </Layout>
     </main>
   )
   

@@ -123,6 +123,7 @@
   .font1{
     font-size: 60px;
     padding-top: 160px;
+    color: white;
   }
   .font2{
     font-size: 20px;
@@ -134,6 +135,12 @@
     color: #666565;
   }
   .font6{
+    color: #666565;
+  }
+  .claro{
+    color: white;
+  }
+  .precio{
     color: #666565;
   }
   /*---------------------------------HOME END-----------------------------------*/
