@@ -1,8 +1,22 @@
 import * as React from 'react';
+import { Box } from '@mui/system';
+import BottomNavigation from '@mui/material/BottomNavigation';
+import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+import MenuItem from '@mui/material/MenuItem';
+import Divider from '@mui/material/Divider';
 
-const menunav = () => {
-  const [value, setValue] = React.useState(0);
-
+const Menunav = () => {
+const [value, setValue] = React.useState('recents');
+const handleChange = (event, newValue) => {
+setValue(newValue); };
+const [anchorEl, setAnchorEl] = React.useState(null);
+const open = Boolean(anchorEl);
+const handleClick = (event) => {
+  setAnchorEl(event.currentTarget);
+};
+const handleClose = () => {
+  setAnchorEl(null);
+};
   return (
     <Box sx={{ width: 500 }}>
       <BottomNavigation
@@ -12,11 +26,10 @@ const menunav = () => {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction label="Inicio" icon={<Icon1 />} />
+        
+        <BottomNavigationAction label="Inicio"/>
         <div>
-            <BottomNavigationAction id="figurasmenu" label="Figuras" icon={<Icon2 />} />
-            <StyledMenu
-            id="figurasmenu"
+            <BottomNavigationAction id="figurasmenu" label="Figuras"
             MenuListProps={{
             'aria-labelledby': 'demo-customized-button',
             }}
@@ -25,43 +38,39 @@ const menunav = () => {
             onClose={handleClose}
             >
                 <MenuItem onClick={handleClose} disableRipple>
-                <EditIcon />
                 Edit
                 </MenuItem>
                 <MenuItem onClick={handleClose} disableRipple>
-                <FileCopyIcon />
                 Duplicate
                 </MenuItem>
                 <Divider sx={{ my: 0.5 }} />
                 <MenuItem onClick={handleClose} disableRipple>
-                <ArchiveIcon />
                 Archive
                 </MenuItem>
                 <MenuItem onClick={handleClose} disableRipple>
-                <MoreHorizIcon />
                 More
                 </MenuItem>
-            </StyledMenu>
+            </BottomNavigationAction>
         </div>
 
 
-        <BottomNavigationAction label="Mangas" icon={<Icon3 />} />
+        <BottomNavigationAction label="Mangas" />
 
 
-        <BottomNavigationAction label="Apparel" icon={<Icon4 />} />
+        <BottomNavigationAction label="Apparel" />
 
 
-        <BottomNavigationAction label="Preventas" icon={<Icon5 />} />
-        <BottomNavigationAction label="Juegos" icon={<Icon6 />} />
-        <BottomNavigationAction label="Otros" icon={<Icon7 />} />
+        <BottomNavigationAction label="Preventas" />
+        <BottomNavigationAction label="Juegos" />
+        <BottomNavigationAction label="Otros" />
 
 
-        <BottomNavigationAction label="Series" icon={<Icon8 />} />
+        <BottomNavigationAction label="Series" />
 
 
-        <BottomNavigationAction label="Rebajas" icon={<Icon9 />} />
+        <BottomNavigationAction label="Rebajas" />
       </BottomNavigation>
     </Box>
   );
 }
-export default menunav
+export default Menunav

@@ -6,7 +6,7 @@ import Cardsection from '@/components/homeblog/cardsection'
 import Navbar from '@/components/navbar'
 import Monthly from '@/components/monthly'
 import Footer from '@/components/footer'
-import menunav from '@/components/menunav'
+import Menunav from '@/components/menunav'
 
 
 
@@ -18,7 +18,7 @@ export default function Home() {
         <Inicio />
         <Space />
         <Features />
-        <menunav />
+        <Menunav />
         <Cardsection />
         <Monthly/>
         <Footer/>
