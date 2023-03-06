@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import 'bootstrap/dist/css/bootstrap.css'
+import '@/styles/Test.css'
 import { Montserrat } from 'next/font/google'
 
 
