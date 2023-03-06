@@ -1,21 +1,28 @@
 import React from "react";
+import Link from "next/link";
 
 const Cardsection = () => {
   return (
     <div>
        <div className="cards-container">
-        <div className="card">
+        <Link href="/" className="card">
+        <div className="">
           <h2>Awesomeness</h2>
           <p>$50.00 USD</p>
-        </div>
-        <div className="card">
+        </div>       
+        </Link>
+        <Link href="/" className="card">
+        <div>
           <h2>Directness</h2>
           <p>$60.00 USD</p>
-        </div>
-        <div className="card">
+        </div>      
+        </Link>
+        <Link href="/" className="card">
+        <div>
           <h2>Simplicity</h2>
           <p>$40.00 USD</p>
         </div>
+        </Link>
       </div>
     </div>
   );
