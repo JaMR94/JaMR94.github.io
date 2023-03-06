@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import '@/styles/Test.css'
 import '@/styles/About.css'
 import '@/styles/Login&Register.css'
+import '@/styles/header.css'
 import { Montserrat } from 'next/font/google'
 
 
