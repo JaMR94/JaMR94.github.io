@@ -1,6 +1,9 @@
 const LoginPage = () => {
     return (
             <main >
+            <div className="decoration1_RegisterPage"></div>
+            <div className="decoration2_RegisterPage"></div>
+            <div className="decoration3_RegisterPage"></div>
               <div className="form-register">
               <form className="RegisterPageForm">
                 <h1 className="h3 mb-3 fw-normal">Crear cuenta</h1>
@@ -42,8 +45,7 @@ const LoginPage = () => {
                   <input type="date" className="form-control" id="floatingPassword" required/>
                   <label htmlFor="floatingInput">Cumpleaños</label><br/>
                 </div>
-
-                <button className="w-100 btn btn-lg btn-dark" type="submit">Crear cuenta</button>
+                <button className="w-100 btn btn-lg btn-dark" type="submit" id="ButtonSubmit_RegisterPage">Crear cuenta</button>
               </form>
               </div>
             </main>
