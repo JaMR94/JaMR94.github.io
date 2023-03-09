@@ -1,5 +1,5 @@
 import { Inter } from '@next/font/google'
-import Layout from '../components/Layout'
+import Layout from '../components/Layouts/Layout'
 import ImgProducts from '@/components/componentsDetaillProducts/imgProducts'
 import HeaderProducts from '@/components/componentsDetaillProducts/headerProducts'
 import DescriptionProdicts from '@/components/componentsDetaillProducts/descriptionProducts'
