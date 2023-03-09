@@ -3,7 +3,6 @@ import RegisterPage from "@/components/RegisterPage";
 import Layout from '@/components/Layout'
 import Layout2 from '@/components/Layouts/Layout2'
 
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home () {

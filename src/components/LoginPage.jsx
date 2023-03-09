@@ -1,7 +1,6 @@
 const LoginPage = () => {
   return (
           <main >
-
             <div className="form-signin">
             <form className="LoginPageForm">
               <h1 className="h3 mb-3 fw-normal">Por favor, inicia sesión</h1>

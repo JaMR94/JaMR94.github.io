@@ -1,5 +1,5 @@
 {
-  "name": "unid-frontend",
+  "name": "my-next-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,11 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.1.6",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.12",
+    "@mui/system": "^5.11.12",
+    "@next/font": "^13.2.1",
+    "bootstrap": "^5.3.0-alpha1",
     "eslint": "8.34.0",
-    "eslint-config-next": "13.1.6",
-    "next": "13.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "eslint-config-next": "^13.2.1",
+    "next": "^13.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hydration-provider": "^1.0.2"
   }
 }

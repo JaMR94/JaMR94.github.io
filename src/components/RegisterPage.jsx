@@ -45,7 +45,6 @@ const LoginPage = () => {
                   <input type="date" className="form-control" id="floatingPassword" required/>
                   <label htmlFor="floatingInput">Cumpleaños</label><br/>
                 </div>
-
                 <button className="w-100 btn btn-lg btn-dark" type="submit" id="ButtonSubmit_RegisterPage">Crear cuenta</button>
               </form>
               </div>

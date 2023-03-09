@@ -1,0 +1,40 @@
+/*------------------------------------ABOUT US START -----------------------*/
+.about{
+    background-image: url(../img/example.jpg);
+    padding-bottom: 7cm;
+    
+  }
+  .text{
+    padding-top: 15px;
+  color: rgb(55, 55, 55);
+  }
+  .text2{
+    text-align: justify;
+  color: rgb(55, 55, 55);
+  }
+  .title{
+    padding-top: 170px;
+    color:rgb(253, 253, 253);
+  }
+  
+  .subt{
+    padding-top: 80px;
+    color:black;
+  }
+  .img{
+    background-image: url(../img/exa2.jpg);
+    width: 550px;
+    height: 460px;
+    margin-bottom: 50px;
+  }
+  .img2{
+    background-image: url(../img/exa2.jpg);
+    padding-bottom: 460px;
+  
+  }
+  .our{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    color: black;
+  }
+  /* ---------------------------------ABOUT US END -----------------------------*/
