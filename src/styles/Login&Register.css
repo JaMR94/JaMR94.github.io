@@ -47,26 +47,6 @@
     text-align: center;
     margin-top: 80px;
   }
-  #Button1_LoginPage{
-    background: black;
-    color: white;
-  }
-  #Button1_LoginPage:hover{
-    background: #b02222;
-    color: white;
-  }
-  #Button2_LoginPage{
-    background: white;
-    color: #b02222;
-    border: 2px solid #b02222;
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
-  }
-  #Button2_LoginPage:hover{
-    background: #b02222;
-    color: white;
-  }
   /* ---------------------------------LOGIN FORM END --------------------------*/
   /* ---------------------------------REGISTER FORM START ----------------------*/
   .form-register {
@@ -75,9 +55,7 @@
     margin-top: 50px;
     border: 1px solid grey;
     border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    margin-bottom: 15px;
+    width: 600px;
   }
   .form-register h1{
     color: black;
@@ -86,43 +64,6 @@
   .form-register label{
     color: black;
   }
-  .form-control:focus{
-    border-color: #b02222;
-    box-shadow:  0 0 0 0.25rem rgba(254, 141, 145, 0.625);;
-  }
-  .form-register #ButtonSubmit_RegisterPage{
-    background: black;
-    color: white;
-  }
-  .form-register #ButtonSubmit_RegisterPage:hover{
-    background: #b02222;
-  }
-    /*
-  .decoration1_RegisterPage{
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    background: 	#b02222d5;
-    border-radius: 20px;
-    margin-top: 60px;
-    margin-left: -50px; 
-  }
-  .decoration2_RegisterPage{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: 	#b02222;
-    border-radius: 20px;
-    margin-top: 250px;
-    margin-left: -50px; 
-  }
-  .decoration3_RegisterPage{
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    background: #b02222;
-    border-radius: 20px;
-    margin-top: 500px;
-    margin-left: 120px; 
-  }*/
+  
+  
   /* ---------------------------------REGISTER FORM END --------------------------*/

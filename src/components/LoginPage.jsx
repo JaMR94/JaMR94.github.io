@@ -12,13 +12,13 @@ const LoginPage = () => {
                 <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
                 <label htmlFor="floatingPassword">Contraseña</label>
               </div>
-              <button className="w-100 btn btn-lg btn-dark" type="submit" id="Button1_LoginPage">Acceder</button>
+              <button className="w-100 btn btn-lg btn-dark" type="submit">Acceder</button>
               <a href="LoginPage">¿Olvidaste tu contraseña?</a>
-            </form> 
+            </form>
             </div>
             <div className="RegisterButton">
             <h6>¿Eres nuevo?</h6>
-            <button className="btn btn-lg btn-dark" id="Button2_LoginPage"> <a href="RegisterPage">Crear cuenta</a> </button>
+            <button className="btn btn-lg btn-dark">Crear cuenta</button>
             </div>
           </main>
         );
