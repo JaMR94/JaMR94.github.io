@@ -1,6 +1,6 @@
 import { Inter } from '@next/font/google'
 import RegisterPage from "@/components/RegisterPage";
-import Layout from '@/components/Layout'
+import Layout from '@/components/Layouts/Layout'
 
 const inter = Inter({ subsets: ['latin'] })
 
