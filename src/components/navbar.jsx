@@ -31,7 +31,7 @@ const Navbar = () => {
             <li className="nav-item boton1">
               <Link href="/">
                 {" "}
-                <button className="boton"> Cart</button>
+                <button className="boton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> Cart</button>
               </Link>
             </li>
           </ul>
