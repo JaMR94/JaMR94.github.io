@@ -5,9 +5,6 @@ import HeaderProducts from '@/components/componentsDetaillProducts/headerProduct
 import DescriptionProdicts from '@/components/componentsDetaillProducts/descriptionProducts'
 import SelectDescriptionProducts from '@/components/componentsDetaillProducts/selectDescriptionProducts'
 import ButomSelectProducts from '@/components/componentsDetaillProducts/butomSelectProducts'
-import Navbar from '@/components/navbar'
-import Monthly from '@/components/monthly'
-import Footer from '@/components/footer'
 import styles from '../styles/butomSelectProducts.module.css';
 
 // import Ejemplo from '@/components/componentsDetaillProducts/ejemplo'
@@ -18,7 +15,6 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home () {
   return (
       <Layout>
-        <Navbar/>
         <div className='container'id={styles.FeatContainer}>
           <div className='row'>
             <div className='col'>
@@ -38,8 +34,6 @@ export default function Home () {
           </div>
         </div>
         {/* <Ejemplo /> */}
-        <Monthly/>
-        <Footer/>
       </Layout>
   )
 }
