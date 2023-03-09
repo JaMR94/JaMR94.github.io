@@ -1,0 +1,314 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --primary-glow: conic-gradient(from 180deg at 50% 50%,
+      #16abff33 0deg,
+      #0885ff33 55deg,
+      #54d6ff33 120deg,
+      #0071ff33 160deg,
+      transparent 360deg);
+  --secondary-glow: radial-gradient(rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0));
+
+  --tile-start-rgb: 239, 245, 249;
+  --tile-end-rgb: 228, 232, 233;
+  --tile-border: conic-gradient(#00000080,
+      #00000040,
+      #00000030,
+      #00000020,
+      #00000010,
+      #00000010,
+      #00000080);
+
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --secondary-glow: linear-gradient(to bottom right,
+        rgba(1, 65, 255, 0),
+        rgba(1, 65, 255, 0),
+        rgba(1, 65, 255, 0.3));
+
+    --tile-start-rgb: 2, 13, 46;
+    --tile-end-rgb: 2, 5, 19;
+    --tile-border: conic-gradient(#ffffff80,
+        #ffffff40,
+        #ffffff30,
+        #ffffff20,
+        #ffffff10,
+        #ffffff10,
+        #ffffff80);
+
+    --callout-rgb: 20, 20, 20;
+    --callout-border-rgb: 108, 108, 108;
+    --card-rgb: 100, 100, 100;
+    --card-border-rgb: 200, 200, 200;
+  }
+}
+
+/* * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+
+/* estilos de pudin */
+.uwu{
+  color: black;
+}
+.space{
+  padding-bottom: 100px;
+  padding-left: 7%
+}
+.dream{
+  background-image: url(../images/placer.jpg);
+  padding-bottom: 200px;
+  padding-top: 150px;
+}
+.mid{
+  text-align: center;
+}
+.card{
+  background-image: url(../images/placer\ 2.jpg);
+  background-size: auto;
+  width: 400px;
+  height: 600px;
+  background-size: cover;
+  border-color: white;
+}
+.card h5{
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+.card p{
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+.test{
+  color: white;
+}
+.der{
+  padding-left: 70%;
+  padding-top: 10px;
+}
+.Espacio{
+  padding-bottom: 20px;
+  padding-top: 100px;
+  font-size: 40px;
+}
+.Espacio2{
+  padding-bottom: 40px;
+  color: #666565;
+  font-size: 20px;
+
+}
+.Espacio3{
+  padding-top: 40px;
+  padding-bottom: 150px;
+  color: #666565;
+  font-size: 13px;
+}
+.btn{
+  background-color: white;
+  border-color: white;
+  color: black;
+  width: 150px;
+  height: 50px;
+}
+.feat1{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.feat1 h2{
+  padding-bottom: 1%;
+}
+.boton{
+  position: absolute;
+  bottom: 30px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+.boton1{
+  padding-left: 10px;
+}
+.biger{
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 4%;
+}
+.links{
+  text-decoration-color: #00000000;
+  color: rgb(83, 83, 83);
+}
+.a{
+  padding-top: 1%;
+}
+.font1{
+  font-size: 60px;
+}
+.font2{
+  font-size: 20px;
+  color: #666565;
+  padding-bottom: 2%;
+}
+.font3{
+  font-size: 20px;
+  color: #666565;
+}
+.font6{
+  color: #666565;
+}
+/* fin de estilos de pudin */
+/*------------------------------------ABOUT US START -----------------------*/
+.about{
+  background-image: url(../img/example.jpg);
+  padding-bottom: 7cm;
+  
+}
+.text{
+  padding-top: 15px;
+color: rgb(55, 55, 55);
+}
+.text2{
+  text-align: justify;
+color: rgb(55, 55, 55);
+}
+.title{
+  padding-top: 170px;
+  color:rgb(253, 253, 253);
+}
+
+.subt{
+  padding-top: 80px;
+  color:black;
+}
+.img{
+  background-image: url(../img/exa2.jpg);
+  width: 550px;
+  height: 460px;
+  margin-bottom: 50px;
+}
+.img2{
+  background-image: url(../img/exa2.jpg);
+  padding-bottom: 460px;
+
+}
+.our{
+  padding-top: 75px;
+  padding-bottom: 75px;
+  color: black;
+}
+/* ---------------------------------ABOUT US END -----------------------------*/
+/* ---------------------------------LOGIN FORM START --------------------------*/
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 200px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.LoginPageForm h1{
+  color: black;
+  text-align: center;
+}
+.LoginPageForm label{
+  color: black;
+}
+.LoginPageForm a{
+  color: rgb(83, 83, 83);
+  display: flex;
+  margin: 20px 0 0 20%;
+}
+.LoginPageForm a:hover{
+  color: rgb(215, 17, 89);
+}
+.btn-dark{
+  width: 400px;
+  text-align: center;
+}
+.RegisterButton{
+  color: black;
+  text-align: center;
+  margin-top: 80px;
+}
+/* ---------------------------------LOGIN FORM END --------------------------*/
+/* ---------------------------------REGISTER FORM START ----------------------*/
+.form-register {
+  padding: 15px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 600px;
+}
+.form-register h1{
+  color: black;
+  text-align: center;
+}
+.form-register label{
+  color: black;
+}
+
+
+/* ---------------------------------REGISTER FORM END --------------------------*/
