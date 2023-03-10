@@ -75,9 +75,9 @@ body {
   overflow-x: hidden;
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
-}
+} */
 
 a {
   color: inherit;
@@ -89,114 +89,41 @@ a {
     color-scheme: dark;
   }
 }
-/*------------------------------------ABOUT US START -----------------------*/
-.about{
-  background-image: url(../images/example.jpg);
-  height: 460px;
-  
-}
-.textabout{
-padding-top: 15px;
-color: rgb(55, 55, 55);
-}
-.text2about{
-text-align: justify;
-color: rgb(55, 55, 55);
-
-
-}
-.titleabout{
-  padding-top: 170px;
-  color:rgb(253, 253, 253);
-}
-
-.subt{
-  margin-top: 80px;
-  color:black;
-}
-.imgabout{
-  background-image: url(../images/exa2.jpg);
-  width: 550px;
-  height: 460px;
-  margin-bottom: 50px;
-}
-.img2about{
-  background-image: url(../images/exa2.jpg);
-  height: 460px;
-
-}
-.our{
-  margin-top: 75px;
-  margin-bottom: 75px;
-  color: black;
-}
-/* ---------------------------------ABOUT US END -----------------------------*/
-/* ---------------------------------LOGIN FORM START --------------------------*/
-.form-signin {
-  max-width: 330px;
-  padding: 15px;
-  margin: auto;
-  margin-top: 200px;
-  border: 1px solid grey;
-  border-radius: 10px;
-}
-
-.form-signin .form-floating:focus-within {
-  z-index: 2;
-}
-
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.LoginPageForm h1{
-  color: black;
+/*CSS del container del Monthly*/
+.Moana{
+  --font-mono: 'Montserrat';
   text-align: center;
+  background-color: #616161;
+  color: #f5f5f5;
+  width:auto;
+  padding-top: 13%;
+  padding-bottom: 20%;
 }
-.LoginPageForm label{
-  color: black;
-}
-.LoginPageForm a{
-  color: rgb(83, 83, 83);
+
+
+/*Footer -> CSS de las columnas*/
+.seccion{
+  align-items: center;
   display: flex;
-  margin: 20px 0 0 20%;
+  flex-direction: column;
+  text-align: left;
+  line-height: 10px;
 }
-.LoginPageForm a:hover{
-  color: rgb(215, 17, 89);
-}
-.btn-dark{
-  width: 400px;
-  text-align: center;
-}
-.RegisterButton{
-  color: black;
-  text-align: center;
-  margin-top: 80px;
-}
-/* ---------------------------------LOGIN FORM END --------------------------*/
-/* ---------------------------------REGISTER FORM START ----------------------*/
-.form-register {
-  padding: 15px;
-  margin: auto;
-  margin-top: 50px;
-  border: 1px solid grey;
-  border-radius: 10px;
-  width: 600px;
-}
-.form-register h1{
-  color: black;
-  text-align: center;
-}
-.form-register label{
-  color: black;
-}
+/* tamaño del carrito */
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+  width: 36%;
 
-
-/* ---------------------------------REGISTER FORM END --------------------------*/
+}
+.offcanvas-title {
+  margin-top: 10px;
+  line-height: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  /* font-size: 18px;
+  line-height: 32px;
+  vertical-align: baseline;
+  margin: 10px 0px;
+  font-weight: 500;
+  text-align: start; */
+  /* color: blue; */
+}

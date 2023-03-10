@@ -1,0 +1,90 @@
+
+  /*Header-css*/
+  .Header-button{
+    margin: 1mm;
+    background-color: black;
+    display: none;
+    border-radius: 50%;
+    
+  }
+  .der{
+    padding-left: 70%;
+  }
+  .Header-svg{
+    width: 1.5cm;
+    height: 1.5cm;
+    background-color: black;
+      
+  }
+  .Header-svg1{
+    width: 1.5cm;
+    height: 1.5cm;
+  }
+  .Header-h1{
+    text-decoration: underline;
+  }
+  .der{
+    justify-content: flex-end;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    
+  }
+  .nav-item{
+    margin: 0.2cm;
+    
+  }
+  
+  
+
+  @media screen and (max-width: 768px) {
+    
+    .Header-button{
+      display: flex;
+    }
+    .nav{
+      width: 100%;
+      flex-flow: column;
+      display: none;
+    
+    }
+    .nav.isActive{
+      display: flex;
+      
+    }
+    .der{
+      flex-flow: column;
+      
+    }
+    .nav-item{
+      line-height: 0.1cm;
+      
+    }
+    
+  }
+  
+  .boton{
+    position: absolute;
+    bottom: 30px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    background-color: black;
+  }
+  .boton1{
+    padding-left: 10px;
+  }
+  .biger{
+    color: black;
+    text-decoration-color: #00000000;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 4%;
+  }
+  .links{
+    text-decoration-color: #00000000;
+    color: rgb(83, 83, 83);
+  }
+  
+  
