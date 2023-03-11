@@ -2,38 +2,34 @@
   /*Header-css*/
   .Header-button{
     margin: 1mm;
-    background-color: black;
+    border: none;
     display: none;
-    border-radius: 50%;
     
   }
-  .Header-svg{
-    width: 1.5cm;
-    height: 1.5cm;
-    background-color: black;
-      
-  }
+  
   .Header-svg1{
     width: 1.5cm;
-    height: 1.5cm;
+    height: 1cm;
+    background-color: white;
+    color: black;
   }
   .Header-h1{
     text-decoration: underline;
   }
   .der{
-    justify-content: flex-end;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    
+    justify-content: flex-end;
+    list-style: none;
+  }
+  .nav{
+   justify-content: flex-end;
+   align-items: center;
+   display: flex;
   }
   .nav-item{
     margin: 0.2cm;
-    
   }
   
-  
-
   @media screen and (max-width: 768px) {
     
     .Header-button{
@@ -42,29 +38,24 @@
     .nav{
       width: 100%;
       flex-flow: column;
-      display: none;
-    
+      display: none;  
     }
     .nav.isActive{
       display: flex;
-      
     }
     .der{
       flex-flow: column;
-      
+      align-items: center;
     }
     .nav-item{
       line-height: 0.1cm;
-      
     }
     
   }
-  
-  .boton{
-    position: absolute;
-    bottom: 30px;
+  .Header-svg{ 
+    bottom: 5cm;
     width: 100px;
-    height: 30px;
+    height: 40px;
     text-align: center;
     color: white;
     background-color: black;
@@ -77,7 +68,7 @@
     text-decoration-color: #00000000;
     font-size: 20px;
     font-weight: 700;
-    padding-left: 4%;
+    padding-left: 1cm;
   }
   .links{
     text-decoration-color: #00000000;
