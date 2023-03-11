@@ -1,126 +1,40 @@
 /*------------------------------------ABOUT US START -----------------------*/
-
-/*-----secc 1----*/
-.sectionabout{
-  margin-left: 30px;
-  margin-right: 30px;
-}
-.aboutheader{
-    background-image: url(../img/chucky.png);
-    display: flex;
-    height: 620px;
-    margin-bottom: 100px;
-    background-position: 50% 50%;
-    justify-content: center;
-    align-items: center;
-    background-size:cover;
+.about{
+    background-image: url(../img/example.jpg);
+    padding-bottom: 7cm;
+    
   }
-  .aboutcontenido{
-    margin-bottom: 35px;
-    text-align: center;
-    max-width: 1140px;
+  .text{
+    padding-top: 15px;
+  color: rgb(55, 55, 55);
   }
-  .abouttitle{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 64px;
-    line-height: 80px;
-    color: #fff;
-    margin-right: auto;
-    margin-left: auto;
+  .text2{
+    text-align: justify;
+  color: rgb(55, 55, 55);
   }
-  .aboutsubt{
-    opacity: 0.6;
-    margin-bottom: 10px;
-    font-size: 20px;
-    line-height: 34px;
-    font-weight: 400;
-    color: #fff;
+  .title{
+    padding-top: 170px;
+    color:rgb(253, 253, 253);
   }
-  /*-----secc 2-----*/
-  #about-content{
-    max-width: 1165px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 60px;
-    width: 100%;
+  
+  .subt{
+    padding-top: 80px;
+    color:black;
   }
-  .abouttitle2 h1{
-    margin-bottom: 20px;
-    color: #1a1b1f;
-    font-size: 44px;
-    line-height: 62px;
-    font-weight: 400;
-  }
-  .abouttitle2 p{
-    opacity: 0.6;
-    margin-bottom: 10px;
-    font-size: 20px;
-    line-height: 34px;
-    font-weight: 400;
-    color: #1a1b1f;
-  }
-  .divider{
-    height: 1px;
-    background-color: #eee;
-  }
-  .aboutcontext{
-    margin-top: 60px;
-    margin-bottom: 150px;
-    width: 100%;
-    align-items: center;
-  }
-.abouttext{
-  font-size: 14px;
-  line-height: 26px;
-  color: #1a1b1f;
-  opacity: 0.6;
-  margin-bottom: 10px;
-  margin-right: 23px;
-  margin-left: 23px;
-  width: 43%;
-}
-  /*-----secc 3-----*/
   .img{
-    background-image: url(../img/chucky.png);
-    max-width: 100%;
-    width: 752px;
+    background-image: url(../img/exa2.jpg);
+    width: 550px;
     height: 460px;
-    margin-bottom: 30px;
-    background-size: cover;
+    margin-bottom: 50px;
   }
   .img2{
-    background-image: url(../img/chucky.png);
-    height: 620px;
+    background-image: url(../img/exa2.jpg);
     padding-bottom: 460px;
-    background-size: cover;
-    margin-bottom: 150px;
+  
   }
-  /*---Secc 4---*/
-  .aboutphilosophy{
-    width: 62%;
-    margin-right: auto;
-    margin-bottom: 120px;
-    margin-left: auto;
-    text-align: center;
-  }
-  .aboutphilosophy h2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    line-height: 50px;
-    font-weight: 400;
-    color: #1a1b1f;
-  }
-  .aboutsubt2{
-    opacity: 0.6;
-    margin-bottom: 11px;
-    font-size: 20px;
-    line-height: 34px;
-  }
-  .abouttextdr{
-    opacity: 0.6;
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 0px;
+  .our{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    color: black;
   }
   /* ---------------------------------ABOUT US END -----------------------------*/
