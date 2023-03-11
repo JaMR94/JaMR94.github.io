@@ -1,0 +1,18 @@
+.tuxteno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+}
+.pagar_now{
+    border-color: black;
+    text-align: center;
+}
+.checktitle{
+    padding-top: 4%;
+    text-align: center;
+}
+.formcontainer{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
