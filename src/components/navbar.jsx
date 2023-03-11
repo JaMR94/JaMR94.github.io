@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import SearchBar from "./SearchBar";
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -10,6 +12,11 @@ const Navbar = () => {
         </Link>
         <div className="collapse navbar-collapse ">
           <ul className="navbar-nav der">
+
+            <li className="nav-item">
+                <SearchBar />
+            </li>
+
             <li className="nav-item">
               <Link href="/" className="links">
                 {" "}
