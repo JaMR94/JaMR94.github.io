@@ -15,7 +15,6 @@ const Navbar = () => {
           {" "}
           <h1 className="Header-h1">STORE</h1>
         </Link>
-
         <button 
         onClick={toggleMenu}
         className="Header-button">
@@ -26,14 +25,13 @@ const Navbar = () => {
       
         <div className= {`nav ${ menu ? 'isActive':''}`}>
           <ul className="navbar-nav der">
-
             <li className="nav-item">
-                <SearchBar />
+              <SearchBar/>
             </li>
             <li className="nav-item">
               <Link href="/" className="links">
                 {" "}
-                <a className="nav-link">Products</a>
+                <a className="nav-link">Products </a>
               </Link>
             </li>
             <li className="nav-item">
@@ -48,17 +46,15 @@ const Navbar = () => {
                 <a className="nav-link">contact</a>
               </Link>
             </li> 
-           
             <li className="nav-item">
               <Link href="/">
                 {" "}
                 <button className="Header-svg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> Cart</button>
               </Link>
-              </li> 
+              </li>
           </ul>
         </div>
       </div>
-    
     </nav>
   );
 };
