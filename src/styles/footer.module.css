@@ -18,13 +18,27 @@
   .columna{
   line-height:20px;    
 }
+
+.columna_1{
+  line-height: 20px;
+}
+.columna_2{
+  line-height:20px;
+  margin-right: 40px;
+}
+.columna_3{
+  line-height:20px;
+}
+.columna_4{
+  line-height:20px;
+  margin-right: 40px;
+}
   
   .titulo{
-    color: #222021;
-    font-size: 16px;
-    padding-top: 20;
-    padding-bottom: 10px;
-    font-weight: bold;
+    font-size: 14px;
+    color: inherit;
+    text-decoration: inherit;
+    padding: 0%;
   }
   
   .item{
@@ -36,12 +50,12 @@
   }
   
   .item:hover{
-    color: #cf0e0e;
+    color: #b02222;
     font-weight: bold;
   }
   
   .copyright{
-    color: #cf0e0e;
+    color: #b02222;
     font-weight: bold;
     font-size: 12px;
     text-align: left;
@@ -49,5 +63,37 @@
     padding-bottom: 10px;
     margin-bottom: 10px;
     margin-left: 22px;
+  }
+
+  @media screen and (max-width: 700px) {
+
+    .imgen{
+      margin-top: 5%;
+      margin-left: 10%;
+    }
+    .columna_1{
+      width: 25%;
+      margin-bottom: 5%;
+
+    }
+    .columna_2{
+      margin-bottom: 5%;
+    }
+    .columna_3{
+      margin-bottom: 5%;
+    }
+    .columna_4{
+      width: 20%;
+      margin-bottom: 5%;
+    }
+  }
+
+  @media (min-width: 701px) and (max-width: 1120px) {
+    .container_footer{
+      display: block;
+    }
+    .columna{
+      margin-left: 14%;
+    }
   }
   
