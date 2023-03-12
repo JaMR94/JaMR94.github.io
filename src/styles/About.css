@@ -1,12 +1,11 @@
 /*------------------------------------ABOUT US START -----------------------*/
-
 /*-----secc 1----*/
 .sectionabout{
   margin-left: 30px;
   margin-right: 30px;
 }
 .aboutheader{
-    background-image: url(../img/chucky.png);
+    background-image: url(../images/example.jpg);
     display: flex;
     height: 620px;
     margin-bottom: 100px;
@@ -82,7 +81,7 @@
 }
   /*-----secc 3-----*/
   .img{
-    background-image: url(../img/chucky.png);
+    background-image: url(../images/exa2.jpg);
     max-width: 100%;
     width: 752px;
     height: 460px;
@@ -90,7 +89,7 @@
     background-size: cover;
   }
   .img2{
-    background-image: url(../img/chucky.png);
+    background-image: url(../images/exa2.jpg);
     height: 620px;
     padding-bottom: 460px;
     background-size: cover;
@@ -123,4 +122,4 @@
     line-height: 26px;
     letter-spacing: 0px;
   }
-  /* ---------------------------------ABOUT US END -----------------------------*/
+  /* ---------------------------------ABOUT US END --------------------*/
