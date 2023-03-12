@@ -10,7 +10,7 @@ const Navbar = () => {
           {" "}
           <h1 className="nav-link ">STORE</h1>
         </Link>
- header/Edgarperez7
+ 
         <button 
         onClick={toggleMenu}
         className="Header-button">
@@ -18,11 +18,11 @@ const Navbar = () => {
           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
         </svg>
         </button>
-
+      
         <div className= {`nav ${ menu ? 'isActive':''}`}>
 
         <div className="collapse navbar-collapse ">
- main
+
           <ul className="navbar-nav der">
 
             <li className="nav-item">
@@ -30,9 +30,16 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
+              <SearchBar/>
+            </li>
+            <li className="nav-item">
               <Link href="/" className="links">
                 {" "}
+
+                <a className="nav-link">Products </a>
+
                 <p className="nav-link">Products</p>
+
               </Link>
             </li>
             <li className="nav-item">
@@ -46,7 +53,7 @@ const Navbar = () => {
                 {" "}
                 <p className="nav-link">contact</p>
               </Link>
- header/Edgarperez7
+
             </li> 
             <li className="nav-item">
               <Link href="/">
@@ -62,7 +69,7 @@ const Navbar = () => {
                 <button className="boton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> Cart</button>
               </Link>
             </li>
- main
+
           </ul>
         </div>
       </div>

@@ -6,8 +6,6 @@
     display: none;
     
   }
- header/Edgarperez7
-  
 
   .der{
     padding-left: 70%;
@@ -18,7 +16,7 @@
     background-color: black;
       
   }
-main
+  
   .Header-svg1{
     width: 1.5cm;
     height: 1cm;
@@ -40,6 +38,8 @@ main
   }
   .nav-item{
     margin: 0.2cm;
+    
+    
   }
   
   @media screen and (max-width: 768px) {
@@ -50,7 +50,8 @@ main
     .nav{
       width: 100%;
       flex-flow: column;
-      display: none;  
+      display: none; 
+      
     }
     .nav.isActive{
       display: flex;
@@ -58,9 +59,12 @@ main
     .der{
       flex-flow: column;
       align-items: center;
+      
+      
     }
     .nav-item{
       line-height: 0.1cm;
+      
     }
     
   }
