@@ -4,7 +4,7 @@ import styles from '../styles/monthly.module.css';
 const Monthly  = () => {
 
     return(
-        <div className="container-fluid">
+        <div className="container-fluid Moana">
             <div className="row">
                 <div className={styles.suscribe}>
                     <h2 className={styles.monthly}>Monthly Newsletter</h2>

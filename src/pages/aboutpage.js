@@ -3,7 +3,7 @@ import Aboutustitulo from '@/components/aboutustitulo'
 import Aboutlifestory from '@/components/aboutlifestory'
 import Aboutimg from '@/components/aboutimg'
 import Abouturphilosophy from '@/components/aboutourphilosophy'
-import Layout from '@/components/Layout'
+import Layout from '@/components/Layouts/Layout'
 
 const inter = Inter({ subsets: ['latin'] })
 

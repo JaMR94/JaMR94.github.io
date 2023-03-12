@@ -18,7 +18,7 @@ const Footer  = () => {
                         </div>
                     </div>
                     <div className="col-sm-2 seccion">
-                        <div className={styles.columna}>
+                        <div className={styles.columna_1}>
                             <h5 className={styles.titulo}>HOME</h5>
                             <p><Link className={styles.item} href="/">Home</Link></p>
                             <p><Link className={styles.item} href="/">About</Link></p>
@@ -27,7 +27,7 @@ const Footer  = () => {
                         </div>
                     </div>
                     <div className="col-sm-2 seccion">
-                        <div className={styles.columna}>
+                        <div className={styles.columna_2}>
                             <h5 className={styles.titulo}>CATEGORIE</h5>
                             <p><Link className={styles.item} href="/">Categorie 1</Link></p>
                             <p><Link className={styles.item} href="/">Categorie 2</Link></p>
@@ -36,7 +36,7 @@ const Footer  = () => {
                         </div>
                     </div>
                     <div className="col-sm-2 seccion">
-                        <div className={styles.columna}>
+                        <div className={styles.columna_3}>
                             <h5 className={styles.titulo}>HELP</h5>
                             <p><Link className={styles.item} href="/">Shipping</Link></p>
                             <p><Link className={styles.item} href="/">Returns & Exchange</Link></p>
@@ -44,7 +44,7 @@ const Footer  = () => {
                         </div>
                     </div>
                     <div className="col-sm-2 seccion">
-                        <div className={styles.columna}>
+                        <div className={styles.columna_4}>
                             <h5 className={styles.titulo}>FOLLOW</h5>
                             <p><Link className={styles.item} href="">Instagram</Link></p>
                             <p><Link className={styles.item} href="">Facebook</Link></p>

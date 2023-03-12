@@ -1,5 +1,14 @@
+// seccion de css
 import '@/styles/globals.css'
-import 'bootstrap/dist/css/bootstrap.css'
+import '@/styles/inicio.css'
+import '@/styles/About.css'
+import '@/styles/Login&Register.css'
+import '@/styles/header.css'
+import '@/styles/ContactUs.css'
+import '@/styles/pagos.css'
+
+
+
 import { Montserrat } from 'next/font/google'
 
 

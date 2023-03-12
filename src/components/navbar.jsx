@@ -1,20 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import SearchBar from "./SearchBar";
 
 const Navbar = () => {
-  const [ menu ,setMenu ] = useState ( false)
-    const toggleMenu = () => {
-      setMenu ( !menu )
-    }
   return (
-
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid a">
         <Link href="/" className="biger">
           {" "}
-          <h1 className="Header-h1">STORE</h1>
+          <h1 className="nav-link ">STORE</h1>
         </Link>
+ 
         <button 
         onClick={toggleMenu}
         className="Header-button">
@@ -24,27 +20,40 @@ const Navbar = () => {
         </button>
       
         <div className= {`nav ${ menu ? 'isActive':''}`}>
+
+        <div className="collapse navbar-collapse ">
+
           <ul className="navbar-nav der">
+
+            <li className="nav-item">
+                <SearchBar />
+            </li>
+
             <li className="nav-item">
               <SearchBar/>
             </li>
             <li className="nav-item">
               <Link href="/" className="links">
                 {" "}
+
                 <a className="nav-link">Products </a>
+
+                <p className="nav-link">Products</p>
+
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/" className="links">
                 {" "}
-                <a className="nav-link">About</a>
+                <p className="nav-link">About</p>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/" className="links">
                 {" "}
-                <a className="nav-link">contact</a>
+                <p className="nav-link">contact</p>
               </Link>
+
             </li> 
             <li className="nav-item">
               <Link href="/">
@@ -52,6 +61,15 @@ const Navbar = () => {
                 <button className="Header-svg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> Cart</button>
               </Link>
               </li>
+
+            </li>
+            <li className="nav-item boton1">
+              <Link href="/">
+                {" "}
+                <button className="boton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> Cart</button>
+              </Link>
+            </li>
+
           </ul>
         </div>
       </div>

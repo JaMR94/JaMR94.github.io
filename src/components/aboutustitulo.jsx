@@ -1,10 +1,18 @@
 const Aboutustitulo = () => {
     return (
       <main>
-        {/*layout*/}
-         <div className="about container ">
-          <h1 className="text-center title">About Us</h1>
-          <p className="text-center text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div className="sectionabout">
+         <div className="aboutheader">
+         <div className="aboutcontenido">
+          <div className="abouttitle">
+           About Us
+           <br />
+          </div>
+         <div className="aboutsubt">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         </div>
+         </div>
+        </div>
         </div>
         </main>
   );
