@@ -61,3 +61,20 @@
     background: #616161e5;
   }
   
+
+  @media screen and (max-width: 700px) {
+    .ui.mobile.ad {
+       display: block;
+     }
+      container-fluid.row {
+      display: block;
+      height: 50vh;
+    }
+    .enteremail-container{
+      display: block;
+      height: 50vh;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+  }
+}
