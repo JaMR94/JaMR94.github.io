@@ -1,32 +1,32 @@
-import React from "react";
 import Link from "next/link";
+import PropTypes from 'prop-types';
 
-const Cardsection = () => {
+
+
+const Cardsection = (props) => {
   return (
-    <div>
-       <div className="cards-container">
-        <Link href="/DetaillProducts" className="card">
-        <div className="">
-          <h2 className="claro">Awesomeness</h2>
-          <p className="precio">$50.00 USD</p>
-        </div>       
-        </Link>
-        <Link href="/DetaillProducts" className="card">
-        <div>
-          <h2 className="claro">Directness</h2>
-          <p className="precio">$60.00 USD</p>
-        </div>      
-        </Link>
-        <Link href="/DetaillProducts" className="card">
-        <div>
-          <h2 className="claro">Simplicity</h2>
-          <p className="precio">$40.00 USD</p>
-        </div>
-        </Link>
-      </div>
-    </div>
+    <div className="cards-container">
+      {Array.isArray(props.users.rows) && props.users.rows.length > 0 ?
+        props.users.rows.map(user => (
+          <Link href="/DetaillProducts" className="card" key={user.id}>
+            <div className="">
+              <h2 className="claro">{user.product_name}</h2>
+              <p className="precio">{user.precio}</p>
+            </div>
+          </Link>
+        )) : null
+      }
+    </div> 
   );
 };
 
-export default Cardsection;
+Cardsection.propTypes = {
+  users: PropTypes.shape({
+    rows: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired
+    })).isRequired
+  }).isRequired
+};
 
+export default Cardsection;
