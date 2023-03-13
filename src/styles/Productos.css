@@ -1,0 +1,61 @@
+/* productos_title start */
+#producto_title{
+    text-align: center;
+}
+/* productos_title END */
+
+/* CARD SECTION CSS STYLE START */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3%;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+  .card {
+    width: calc(100% / 3 - 40px);
+    height: 620px;
+    background-image: url(../img/placer\ 2.jpg);
+    padding: 20px;
+    border-radius: 10px;
+    border-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card h2 {
+    position: absolute;
+    bottom: 60px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .card p {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  @media screen and (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+      height: 600px;
+    }
+    .dream{
+      max-width: 100%;
+    }
+  
+  }
+  
+  .claro{
+    color: white;
+  }
+  .precio{
+    color: #666565;
+  }
+  /* CARD SECTION CSS STYLE END */ 
