@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const inicio = () => {
   return (
@@ -10,9 +11,11 @@ const inicio = () => {
         </p>
 
         <div className="mid">
-          <button className="btn btn-primary" id="boton_inicio" type="button">
+          <Link href="/Productos">
+          <button  id="boton_inicio" type="button">
             EXPLORE
           </button>
+          </Link>
         </div>
       </div>
     </div>
