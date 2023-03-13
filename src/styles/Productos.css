@@ -26,16 +26,19 @@
   }
   .card h2 {
     position: absolute;
-    bottom: 60px;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    bottom: 110px;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
   }
-  .card p {
+  #desc_corta{
     position: absolute;
-    bottom: 20px;
-    left: 30px;
-    font-size: 1em;
-    line-height: 1.5;
+    bottom: 40px;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 26px;
+    color: white;
   }
   @media screen and (max-width: 768px) {
     .cards-container {
@@ -49,13 +52,20 @@
     .dream{
       max-width: 100%;
     }
-  
+    #desc_corta{
+      line-height: 20px;
+    }
   }
   
   .claro{
     color: white;
   }
   .precio{
-    color: #666565;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 26px;
   }
   /* CARD SECTION CSS STYLE END */ 

@@ -6,15 +6,15 @@ const Navpage = () => {
         <div>
             <div className="sectionavb">
     <header className="headernav">
-      <Link href="/"><p className="logonav">Store</p></Link>
+      <a href="/"className="logonav">Store</a>
   
   <input className="menu-btn" type="checkbox" id="menu-btn" />
   <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
   <ul class="menu">
-    <Link href="/Productos"> <li><p className="mt-4">PRODUCTS</p></li></Link>
-    <Link href="/aboutpage"> <li><p className="mt-4">ABOUT</p></li></Link>
-    <Link href="Contact_us"> <li><p className="mt-4">CONTACT US</p></li></Link>
-    <Link href="LoginPage"> <li><p className="mt-4">LOGIN</p></li></Link>
+    <li><a href="/Productos" className="mt-4">PRODUCTS</a></li>
+    <li><a href="/aboutpage" className="mt-4">ABOUT</a></li>
+    <li><a href="/Contact_us" className="mt-4">CONTACT US</a></li>
+    <li><a href="/LoginPage" className="mt-4">LOGIN</a></li>
     <li><button className="btn btn-lg btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">CART 0</button></li>
   </ul>
 </header>
