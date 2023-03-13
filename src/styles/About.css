@@ -254,7 +254,7 @@
       .headernav li {
         float: left;
       }
-      .headernav li a {
+      .headernav li p {
         padding: 20px 30px;
       }
       .headernav .menu {
