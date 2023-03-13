@@ -1,18 +1,20 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Navpage = () => {
     return (
         <div>
             <div className="sectionavb">
     <header className="headernav">
-  <a href="/" className="logonav">Store</a>
+      <Link href="/"><p className="logonav">Store</p></Link>
+  
   <input className="menu-btn" type="checkbox" id="menu-btn" />
   <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
   <ul class="menu">
-    <li><a href="#" className="mt-4">PRODUCTS</a></li>
-    <li><a href="#" className="mt-4">ABOUT</a></li>
-    <li><a href="#" className="mt-4">CONTACT US</a></li>
-    <li><a href="#" className="mt-4">LOGIN</a></li>
+    <Link href="/Productos"> <li><p className="mt-4">PRODUCTS</p></li></Link>
+    <Link href="/aboutpage"> <li><p className="mt-4">ABOUT</p></li></Link>
+    <Link href="Contact_us"> <li><p className="mt-4">CONTACT US</p></li></Link>
+    <Link href="LoginPage"> <li><p className="mt-4">LOGIN</p></li></Link>
     <li><button className="btn btn-lg btn-dark">CART 0</button></li>
   </ul>
 </header>

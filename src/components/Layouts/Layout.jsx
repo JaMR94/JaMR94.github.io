@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Navbar from "../navbar";
+import Navpage from "../Navpage";
 import Monthly from "../monthly";
 import Footer from "../footer";
 import Carrito from "../Carrito";
@@ -22,7 +22,7 @@ const Layout = (props) => {
       </Head>
       {/* <SearchBar/> */}
       <Carrito/>
-      <Navbar/>
+      <Navpage/>
       <div>{props.children}</div>
       <Monthly/>
       <Footer/>
