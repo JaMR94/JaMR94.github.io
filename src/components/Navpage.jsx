@@ -15,7 +15,7 @@ const Navpage = () => {
     <Link href="/aboutpage"> <li><p className="mt-4">ABOUT</p></li></Link>
     <Link href="Contact_us"> <li><p className="mt-4">CONTACT US</p></li></Link>
     <Link href="LoginPage"> <li><p className="mt-4">LOGIN</p></li></Link>
-    <li><button className="btn btn-lg btn-dark">CART 0</button></li>
+    <li><button className="btn btn-lg btn-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">CART 0</button></li>
   </ul>
 </header>
 </div>
