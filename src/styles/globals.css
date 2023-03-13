@@ -95,11 +95,11 @@ a {
 .Moana{
   --font-mono: 'Montserrat';
   text-align: center;
-  background-color: #616161;
-  color: #f5f5f5;
+  background-color: #f1f0f0;
+  color: #1a1b1f;
   width:auto;
-  padding-top: 13%;
-  padding-bottom: 15%;
+  padding-top: 130px;
+  padding-bottom: 140px;
 }
 
 
