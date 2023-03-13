@@ -115,12 +115,12 @@ const Pagos = () => {
                     </div>
                   </div>
                   {/* Num. telefonico, casa/trabajo end */}
-
-                </form>
-
+                  
                   <div className="pagar_now">
                     <button className="btn" id='boton_pago' type="submit">pagar </button>
                   </div>
+                </form>
+
              </div>
         </div>
     );

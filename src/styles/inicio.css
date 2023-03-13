@@ -32,10 +32,12 @@
   border-color: transparent;
   color: #1a1b1f;
   width: 151px;
-  height: 58px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-size: 14px;
   line-height: 26px;
   transition: 0.5s ease;
+  border-radius: 0%;
 }
 #boton_inicio:hover{
   opacity: 0.7;

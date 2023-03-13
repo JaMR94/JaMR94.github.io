@@ -145,7 +145,7 @@
       background-color: #fff;
     }
     
-    .headernav li p {
+    .headernav li a {
       display: block;
       padding: 20px 20px;
       color: #43464d;
@@ -156,7 +156,7 @@
       text-transform: uppercase;
     }
     
-    .headernav li p:hover {
+    .headernav li a:hover {
      color: black;
     }
     

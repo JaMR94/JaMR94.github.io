@@ -11,7 +11,8 @@ const Cardsection = (props) => {
           <Link href="/DetaillProducts" className="card" key={user.id}>
             <div className="">
               <h2 className="claro">{user.product_name}</h2>
-              <p className="precio">{user.precio}</p>
+              <p id="desc_corta">{user.short_desc}</p>
+              <p className="precio">${user.price} MXN</p>
             </div>
           </Link>
         )) : null
