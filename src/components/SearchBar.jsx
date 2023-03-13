@@ -6,6 +6,7 @@ export default function SearchBar() {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [selectedResultIndex, setSelectedResultIndex] = useState(-1);
 
   const handleSearch = async () => {
     const url = `https://www.googleapis.com/books/v1/volumes?q=${query}`;
@@ -21,6 +22,7 @@ export default function SearchBar() {
 
   const handleProductSelect = (product) => {
     setSelectedProduct(product);
+    setSelectedResultIndex(-1);
   };
 
   const handleKeyDown = (e) => {
@@ -49,8 +51,14 @@ export default function SearchBar() {
 
       {results.length > 0 && (
         <ul style={{ listStyle: "none", background: "#ccc" }}>
-          {results.map((result) => (
-            <li key={result.id} style={{ color: "black"}} onClick={() => handleProductSelect(result)}>
+          {results.map((result, index) => (
+            <li
+              key={result.id}
+              style={{ color: "black" }}
+              onClick={() => handleProductSelect(result)}
+              onMouseOver={() => setSelectedResultIndex(index)}
+              className={selectedResultIndex === index ? styles["selected-result"] : ""}
+            >
               {result.volumeInfo.title}
             </li>
           ))}

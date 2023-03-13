@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import SearchBar from './SearchBar';
 
 const Navpage = () => {
     return (
@@ -10,6 +11,7 @@ const Navpage = () => {
   
   <input className="menu-btn" type="checkbox" id="menu-btn" />
   <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
+  <SearchBar/>
   <ul class="menu">
     <li><a href="/Productos" className="mt-4">PRODUCTS</a></li>
     <li><a href="/aboutpage" className="mt-4">ABOUT</a></li>
