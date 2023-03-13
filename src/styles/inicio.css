@@ -18,7 +18,8 @@
 .font2{
   font-size: 20px;
   line-height: 34px;
-  color: #666565;
+  color: #fff;
+  opacity: 0.6;
   padding-bottom: 2%;
 }
 .mid{
@@ -51,14 +52,16 @@
 }
 .Espacio2{
   padding-bottom: 40px;
-  color: #666565;
+  color: #1a1b1f;
+  opacity: 0.6;
   font-size: 20px;
 
 }
 .Espacio3{
   padding-top: 40px;
   padding-bottom: 2%;
-  color: #838487fa;
+  color: #1a1b1f;
+  opacity: 0.6;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -76,59 +79,7 @@
 }
 .font3{
   font-size: 20px;
-  color: #666565;
+  color: #1a1b1f;
+  opacity: 0.6;
 }
 /* FEATURES CSS STYLE END */
-
-/* CARD SECTION CSS STYLE START */
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: auto;
-  gap: 20px;
-  padding-bottom: 30px;
-}
-.card {
-  width: calc(100% / 3 - 40px);
-  height: 620px;
-  background-image: url(../img/placer\ 2.jpg);
-  padding: 20px;
-  border-radius: 10px;
-  border-color: white;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.card h2 {
-  position: absolute;
-  bottom: 60px;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-.card p {
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-  font-size: 1em;
-  line-height: 1.5;
-}
-@media screen and (max-width: 768px) {
-  .cards-container {
-    flex-direction: column;
-  }
-
-  .card {
-    width: 100%;
-    height: 600px;
-  }
-}
-
-.claro{
-  color: white;
-}
-.precio{
-  color: #666565;
-}
-/* CARD SECTION CSS STYLE END */ 
-  /*---------------------------------HOME END-----------------------------------*/
