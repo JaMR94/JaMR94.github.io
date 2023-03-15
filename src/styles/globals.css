@@ -95,19 +95,36 @@ a {
 .Moana{
   --font-mono: 'Montserrat';
   text-align: center;
-  background-color: #616161;
-  color: #f5f5f5;
+  background-color: #f1f0f0;
+  color: #1a1b1f;
   width:auto;
   padding-top: 13%;
-  padding-bottom: 15%;
+  padding-bottom: 14%;
 }
 
 
 /*Footer -> CSS de las columnas*/
+
 .seccion{
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  line-height: 10px;
+  line-height: 26px;
 }
+
+@media (min-width: 320px) and (max-width: 568px) {
+  
+  .seccion{
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    margin-bottom: 15%;
+  }
+
+}
+@media (min-width: 570px) and (max-width: 1070px){
+  .seccion{
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    margin-bottom: 15%;
+  }
+}
+
