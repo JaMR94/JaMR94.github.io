@@ -5,7 +5,7 @@ const Pagostitle = () => {
         <div>
             <div className="container checktitle">
                 <h1>CHECKOUT</h1>
-                <p>el total a pagar va a ser de :</p>
+                <p>Total a pagar: </p>
             </div>
         </div>
     );

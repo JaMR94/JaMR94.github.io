@@ -1,57 +1,35 @@
 
 .container_footer{
-    --font-mono:'Montserrat';
-    background-color: #fff;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    
-  }
+  --font-mono:'Montserrat';
+  background-color: #fff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   
-  .imgen{
-    margin: auto;
-    float: left;
-    margin-left: 12%;
-  }
-  
-  .columna{
-  line-height:20px;    
 }
 
 .columna_1{
-  line-height: 20px;
-}
-.columna_2{
-  line-height:20px;
-  margin-right: 40px;
-}
-.columna_3{
-  line-height:20px;
-}
-.columna_4{
-  line-height:20px;
-  margin-right: 40px;
+  margin-left: 15%;
 }
   
-  .titulo{
-    font-size: 14px;
-    color: inherit;
-    text-decoration: inherit;
-    padding: 0%;
-  }
+.titulo{
+  font-size: 12px;
+  color: inherit;
+  text-decoration: inherit;
+  padding-bottom: 14%;
+}
   
-  .item{
-    color: #616161;
-    font-size: 14px;
-    color: inherit;
-    text-decoration: inherit;
-    padding: 0%;
-  }
+.item{
+  color: #43464da8;
+  font-size: 12px;
+  text-decoration: inherit;
+  margin-bottom: 30px;
+}
   
   .item:hover{
     color: #b02222;
-    font-weight: bold;
+    font-weight: bolder;
   }
   
   .copyright{
@@ -65,35 +43,64 @@
     margin-left: 22px;
   }
 
-  @media screen and (max-width: 700px) {
+  @media (min-width: 320px) and (max-width: 568px) {
 
     .imgen{
-      margin-top: 5%;
-      margin-left: 10%;
+      display: flex;
+      margin: 20%;
+      padding-left: 21%;
     }
+
+    .titulo{
+      padding-bottom: 10%;
+    }
+
     .columna_1{
-      width: 25%;
-      margin-bottom: 5%;
+      text-align: center;
+      margin-right: 17%;
+    }
 
-    }
-    .columna_2{
-      margin-bottom: 5%;
-    }
-    .columna_3{
-      margin-bottom: 5%;
-    }
-    .columna_4{
-      width: 20%;
-      margin-bottom: 5%;
+    .copyright{
+      text-align: center;
+      margin-right: 8%;
     }
   }
 
-  @media (min-width: 701px) and (max-width: 1120px) {
-    .container_footer{
-      display: block;
+  @media (min-width: 570px) and (max-width: 700px){
+    
+    .imgen{
+      display: flex;
+      padding-left: 23%;
     }
-    .columna{
-      margin-left: 14%;
+
+    .titulo{
+      padding-bottom: 10%;
+    }
+
+    .columna_1{
+      text-align: center;
+      margin-right: 17%;
+    }
+
+    .copyright{
+      text-align: center;
+      margin-right: 8%;
     }
   }
+
+  @media (min-width: 701px) and (max-width:1070px){
+    .imgen{
+      display: flex;
+      padding-left: 23%;
+    }
+  }
+
+  @media (min-width: 1071px){
+    .imgen{
+      margin-left: 15%;
+    }
+  }
+
+
+
   

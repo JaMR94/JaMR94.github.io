@@ -25,7 +25,7 @@ const ContactForm = () => {
 
                 </div>
                 <div className="container boton_mandar">
-                 <button className="btn" type='submit' id='mandar'>mandar</button>
+                 <button className="btn" type='submit' id='mandar'>Mandar</button>
                 </div>
             </div>
             </form>
