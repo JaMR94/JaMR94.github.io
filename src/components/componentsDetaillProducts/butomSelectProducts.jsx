@@ -11,7 +11,7 @@ const ButomSelectProducts = () => {
                 <button className={styles.ButtonColor}>Add to Cart</button>
             </div>
             <div class="col">
-                <button className={styles.ButtonColor}>Buy now</button>
+                {/* <button className={styles.ButtonColor}>Buy now</button> */}
             </div>
         </div>
     </div>
