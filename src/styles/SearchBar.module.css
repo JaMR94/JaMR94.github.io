@@ -1,7 +1,8 @@
 .search-bar-container {
   position: absolute;
-  left: 30%;
-  top: 35px; 
+  text-align: center;
+  top: 430px;
+  right: 40%;
   z-index: +3;
   justify-content: center;
   align-items: center;
@@ -10,21 +11,34 @@
 .input {
     border: 1px solid black;
     background-color: white;
-    padding: 6px 10px;
-    border-radius: 8px;
+    padding: 8px 10px;
+    border-right: none;
     font-size: 16px;
     color: black;
     width: 200px;
     max-width: 400px;
+    margin-right: 10px;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+.input:focus-visible{
+  border: 1px solid black;
+  box-shadow: none;
+  outline: none;
+  border-right: none;
 }
 
 .button {
   background-color: #f0f0f0;
   color: #333;
-  border: none;
+  border: 1px solid black;
+  border-left: none;
   padding: 8px 16px;
-  border-radius: 4px;
   cursor: pointer;
+  margin-left: 10px;
+  border-left-width: 1px;
+  border-left-style: solid;
 }
 
 .selected-result {
@@ -36,13 +50,24 @@
 @media (max-width: 768px) {
   .search-bar-container {
     position: static;
-    margin-top: 20px;
+    padding-top: 8%;
   }
 
   .input {
-    width: 100%;
+    width: 50%;
+    font-size: 14px; 
+    margin-left: 15px;
+    margin-right: 10px;
+    border-right-width: 1px;
+    border-right-style: solid;
   }
   .button {
-    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 6px 10px;
+    border-left-width: 1px;
+    border-left-style: solid;
   }
 }

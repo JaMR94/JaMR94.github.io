@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import styles from '../styles/SearchBar.module.css';
 
 export default function SearchBar() {
@@ -9,12 +8,13 @@ export default function SearchBar() {
   const [selectedResultIndex, setSelectedResultIndex] = useState(-1);
 
   const handleSearch = async () => {
-    const url = `https://www.googleapis.com/books/v1/volumes?q=${query}`;
-
     try {
-      const response = await axios.get(url);
-      const data = response.data.items;
-      setResults(data);
+      const response = await fetch("https://ecommerce-unid.000webhostapp.com/products");
+      const data = await response.json();
+      const filteredProducts = data.rows.filter(product =>
+        product.product_name.toLowerCase().includes(query.toLowerCase())
+      );
+      setResults(filteredProducts);
     } catch (error) {
       console.error(error);
     }
@@ -59,7 +59,7 @@ export default function SearchBar() {
               onMouseOver={() => setSelectedResultIndex(index)}
               className={selectedResultIndex === index ? styles["selected-result"] : ""}
             >
-              {result.volumeInfo.title}
+              {result.product_name}
             </li>
           ))}
         </ul>
@@ -67,9 +67,9 @@ export default function SearchBar() {
 
       {selectedProduct && (
         <div>
-          <h2>{selectedProduct.volumeInfo.title}</h2>
-          <p>{selectedProduct.volumeInfo.description}</p>
-          <img src={selectedProduct.volumeInfo.imageLinks.thumbnail} alt={selectedProduct.volumeInfo.title} />
+          <h2>{selectedProduct.product_name}</h2>
+          <p>{selectedProduct.description}</p>
+          <img src={selectedProduct.image} alt={selectedProduct.product_name} />
         </div>
       )}
     </div>
