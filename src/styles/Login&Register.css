@@ -1,0 +1,138 @@
+/* ---------------------------------LOGIN FORM START --------------------------*/
+.LoginPage_h1{
+  text-align: center;
+  padding: 15px;
+}
+.LoginPage_h1 a{
+  font-size: 26px;
+  text-decoration: underline;
+  font-weight: bold
+}
+.LoginPage_h1 a:hover{
+  color: #b02222;
+}
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 80px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .form-signin .form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-form-control-bg);
+    border-color: #b02222;
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem #b022222f;
+}
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .LoginPageForm h1{
+    color: black;
+    text-align: center;
+  }
+  .LoginPageForm label{
+    color: black;
+  }
+  .LoginPageForm a{
+    color: rgb(83, 83, 83);
+    display: flex;
+    margin: 20px 0 0 20%;
+  }
+  .btn-dark{
+    width: 400px;
+    text-align: center;
+  }
+  .RegisterButton{
+    color: black;
+    text-align: center;
+    margin-top: 80px;
+  }
+  #LoginPage_ButtonLogin{
+    background: black;
+  }
+  #LoginPage_ButtonLogin:hover{
+    background: #b02222;
+  }
+  #LoginPage_ButtonRegister{
+    background: none;
+    border: 2px solid #b02222;
+    color: #b02222;
+  }
+  #LoginPage_ButtonRegister:hover{
+    background: #b02222;
+    color: white;
+  }
+  /* ---------------------------------LOGIN FORM END --------------------------*/
+  /* ---------------------------------REGISTER FORM START ----------------------*/
+  .RegisterPage_h1{
+    text-align: center;
+    padding: 15px;
+  }
+  .RegisterPage_h1 a{
+    font-size: 26px;
+    text-decoration: underline;
+    font-weight: bold
+  }
+  .RegisterPage_h1 a:hover{
+    color: #b02222;
+  }
+  .form-register {
+    padding: 15px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40%;
+    min-width: 300px;
+  }
+  @media(max-width:1000px){
+    .form-register{
+      width: 80%;
+    }
+  }
+  .form-register .form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-form-control-bg);
+    border-color: #b02222;
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem #b022222f;
+}
+  .form-register h1{
+    color: black;
+    text-align: center;
+  }
+  .form-register label{
+    color: black;
+  }
+  .form-register .form-floating:focus-within {
+    z-index: 2;
+  }
+  #RegisterPage_ButtonRegister{
+    background: black;
+    color: white;
+  }
+
+  #RegisterPage_ButtonRegister:hover{
+    background-color: #b02222;
+  }
+  @media (max-width: 500px){
+    #floatingInput_Apellidos{
+      margin-top: 25px;
+    }
+  }
+  /* ---------------------------------REGISTER FORM END --------------------------*/

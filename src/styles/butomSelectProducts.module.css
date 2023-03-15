@@ -1,0 +1,52 @@
+#FeatContainer{
+    padding-top: 30px;
+}
+.HrBlak{
+    color:black;
+    opacity: 1;
+    margin-bottom: 10px;
+} 
+.HrGris{
+    color: #848484;
+}
+#Select{
+    border-radius: 0%;
+    background-color: #f3f3f3;
+    border-color: #cccccc;
+    margin-bottom: 10px;
+}
+#SelectQuantity{
+    width: inherit;
+    /* width: 80px; */
+    border-radius: 0%;
+    border-color: #cccccc;
+    margin-bottom: 10px;
+}
+.ButtonColor{
+    font-size: 1.25rem;
+    width: inherit;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: none;
+}
+#featImg{
+    display: flex;
+    margin-bottom: 30px;
+
+}
+.Letterh1{
+    color: #848484;
+    font-size: 30px;
+    line-height: 52px;
+    font-weight: 400;
+
+}
+.LetterP{
+    color: #848484;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}

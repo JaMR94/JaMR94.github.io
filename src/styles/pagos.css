@@ -1,0 +1,28 @@
+.tuxteno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+}
+.pagar_now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#boton_pago{
+    background-color: #1a1b1f;
+    color: white;
+}
+.checktitle{
+    padding-top: 4%;
+    text-align: center;
+}
+.checktitle p{
+    color: #1a1b1f;
+    opacity: 0.6;
+}
+.formcontainer{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    
+}

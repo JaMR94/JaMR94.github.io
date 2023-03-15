@@ -1,0 +1,106 @@
+/* titulo_contact.jsx css styles START*/
+.titulo{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.b{
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+/* titulo_contact.jsx css styles END*/
+
+
+/* contact_form.jsx css styles END*/
+.testing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+}
+.test2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton_mandar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10%;
+        padding-top: 2%;
+
+}
+#mandar{
+    background-color: black;
+    color: white;
+    
+    width: 650px;
+}
+.altura{
+    height: 200px;
+    width: 650px;
+}
+@media screen and (max-width: 768px) {
+    .altura{
+        height: auto;
+        width: auto;
+    }
+    #mandar{
+        width: auto;
+    }
+  }
+/* contact_form.jsx css styles END*/
+
+/* Telefonos.jsx css styles START*/
+#telefonos_contenedor{
+    padding-bottom: 5%;
+}
+#contactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centrar{
+    text-align: center;
+    margin-bottom: 10px;
+    opacity: 1;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+}
+.number{
+    text-align: center;
+    color: #1a1b1f;
+    opacity: 0.9;
+    font-size: 16px;
+    line-height: 28px;
+}
+.horario{
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1a1b1f;
+    opacity: 0.6;
+}
+#salto{
+    color: transparent;
+    font-size: 12px;
+    line-height: 20px;
+}
+#email{
+    color: #1a1b1f;
+    opacity: 0.6;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+}
+/* Telefonos.jsx css styles END*/
+
+#contacto_principal_titulo{
+    text-align: center;
+    padding-bottom: 4%;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 400;
+}

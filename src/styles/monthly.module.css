@@ -1,20 +1,24 @@
 
   h2.monthly{
     font-size: 36px;
-    letter-spacing: 1px; 
+    line-height: 50px;
   }
-  
   .suscribe{
-    margin: auto ;
+    margin-top: 10px;
+    margin-bottom: 15px;
     align-content: center ;
-  }
+   }
   
   .phrase_news{
-    line-height: 30px;
+     line-height: 26px;
+    letter-spacing: 0;
+    font-size: 14px;
     margin: auto;
-    display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 30%;
+    min-width:389px;
+    color: #1a1b1f;
+    opacity: 0.6;
   }
   
   .p.news{
@@ -25,55 +29,65 @@
   
   .news{
     margin-top: 3%;
-  }
-
-  .email{
-    margin: 30px;
+    margin-bottom: 2px;
   }
   
   .enteremail{
-    --font-mono:'Montserrat-BoldItalic';
-    font-size: small;
+    width: 330px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    padding: 9px 8px;
+    border: 1px solid #eeeded;
     background-color: #fff;
-    border-color: #b3b3b3;
-    width: 40%;
-    height: auto;
-    margin: auto;
-    margin-right: 15px;
-    text-align: left;
-    padding: 13px;
+    border-radius: 0px;
+    font-size: 14px;
+    line-height: 26px;
+    opacity: 0.6;
+    align-items: center;
+    color: #1a1b1f;
   }
   
   .submit{
     --font-mono: 'Montserrat';
-    background-color: #cf0e0e;
+    background-color: #1a1b1f;
     font-size: 12px;
+    line-height: 20px;
     color: #fff;
-    border-color: #616161 ;
-    width: 100px;
-    height: 50px;
-    margin: auto;
+    padding: 12px 24px;
     text-align: center;
     letter-spacing: 2px;
+    border: 0;
   }
   
   .submit:hover{
-    background: #616161e5;
+    background-color: #B02222;
+    color: #fff;
   }
   
+
   @media screen and (max-width: 700px) {
-    .ui.mobile.ad {
-       display: block;
-     }
-      container-fluid.row {
-      display: block;
-      height: 50vh;
+    
+    .submit{
+      margin-top: 15px;
+      width: auto;
     }
-    .enteremail-container{
-      display: block;
-      height: 50vh;
+    .monthly{
+      font-size: 10px;
+      width: 10%;
+    }
+
+    .news{
+      display: flex;
+      width: 70%;
+      margin-left: 3%;
+    }
+    .enteremail{
+      display: flex;
       width: 100%;
       overflow: hidden;
       position: relative;
-  }
+    }
+    .submit{
+      width: 100%;
+    }
 }

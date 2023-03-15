@@ -1,6 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import styles from '../styles/footer.module.css';
+import Link from 'next/link'
+import Image from 'next/image'
+import logo from '../img/logo.jpg'
+import styles from '../styles/footer.module.css'
 
 
 
@@ -10,10 +11,17 @@ const Footer  = () => {
         <footer>
             <div className={styles.container_footer}>
                 <div className="row">
-                    <div className="col-sm-4 futer">
+                    <div className="col-sm-4 seccion">
                         <div className={styles.imgen}>
                             <Link href="/">
-                                <Image src="" alt="logo" />
+                                <Image 
+                                
+                                src={logo} 
+                                alt="logo" 
+                                width={65} 
+                                height={25}
+
+                                />
                             </Link>
                         </div>
                     </div>

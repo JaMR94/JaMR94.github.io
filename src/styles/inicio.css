@@ -1,0 +1,91 @@
+/* INICIO CSS STYLE START */
+.dream{
+  background-image: url(../img/placer3.jpg);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 95vw; /* Cambia el ancho del container al 80% del ancho de la pantalla */
+}
+.font1{
+  font-size: 60px;
+  padding-top: 160px;
+  color: white;
+  font-size: 64px;
+  line-height: 80px;
+  margin-bottom: 10px;
+  
+}
+.font2{
+  font-size: 20px;
+  line-height: 34px;
+  color: #fff;
+  opacity: 0.6;
+  padding-bottom: 2%;
+}
+.mid{
+  text-align: center;
+  padding-bottom: 200px;
+
+}
+#boton_inicio{
+  background-color: white;
+  border-color: transparent;
+  color: #1a1b1f;
+  width: 151px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 14px;
+  line-height: 26px;
+  transition: 0.5s ease;
+  border-radius: 0%;
+}
+#boton_inicio:hover{
+  opacity: 0.7;
+}
+/* INICIO CSS STYLE END */
+
+
+/* SPACE CSS STYLE START */
+.space{
+  padding-bottom: 100px;
+  padding-left: 7%
+}
+.Espacio{
+  padding-bottom: 20px;
+  padding-top: 100px;
+  font-size: 40px;
+  color: black;
+}
+.Espacio2{
+  padding-bottom: 40px;
+  color: #1a1b1f;
+  opacity: 0.6;
+  font-size: 20px;
+
+}
+.Espacio3{
+  padding-top: 40px;
+  padding-bottom: 2%;
+  color: #1a1b1f;
+  opacity: 0.6;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+/* SPACE CSS STYLE END */
+
+
+/* FEATURES CSS STYLE START */
+.feat1{
+  padding-bottom: 10px;
+}
+.feat1 h2{
+  padding-bottom: 1%;
+  color: black;
+}
+.font3{
+  font-size: 20px;
+  color: #1a1b1f;
+  opacity: 0.6;
+}
+/* FEATURES CSS STYLE END */
