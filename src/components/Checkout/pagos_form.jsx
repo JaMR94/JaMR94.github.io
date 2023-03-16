@@ -1,128 +1,64 @@
+// https://formsubmit.co/
+// agregar el monto max que va a pagar 
+// checar si se nesesita mas campos
 import React from 'react';
 
 const Pagos = () => {
     return (
-        <div>
+            <div>
              <div className="container formcontainer">
-                <form>
-                  {/* nombre tarjetas y cvv start */}
-                  <div className="container">
-                    <div className="row tuxteno">
-                    <div className="col-md-4">
-                      <label className="form-label">Nombre completo</label>
-                      <input type="text" className="form-control" placeholder='Nombres y apellidos'  required />
-                    </div>
-                    <br />
-                    <div className="col-md-3">
-                      <label className="form-label">Tarjeta de credito/debito</label>
-                      <input type="text" className="form-control" placeholder='Número de tarjeta' id="" required />
-                    </div>
-                    <div className="col-md-1 ">
-                      <label  className="form-label">CVV</label>
-                      <div className="input-group">
-                        <input type="text" className="form-control" placeholder='CVV'  required />
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-                  {/* nombre tarjetas y cvv end */}
-
-                  {/* ciudad, estado y código postal start */}
-                    <div className="container">
-                      <div className="row tuxteno">
-                        <div className="col-md-4">
-                          <label className="form-label">Ciudad</label>
-                          <input type="text" className="form-control" placeholder='Ciudad' required />
-                        </div>
-                         <div className="col-md-3">
-                          <label className="form-label">Estado</label>
-                          <select className="form-select" required>
-                            <option selected disabled value>seleccione uno...</option>
-                            <option>Aguascalientes</option>
-                            <option>Baja California</option>
-                            <option>Baja California Sur</option>
-                            <option>Campeche</option>
-                            <option>Chiapas</option>
-                            <option>Chihuahua</option>
-                            <option>Ciudad de México</option>
-                            <option>Coahuila</option>
-                            <option>Colima</option>
-                            <option>Durango</option>
-                            <option>Estado de México</option>
-                            <option>Guanajuato</option>
-                            <option>Guerrero</option>
-                            <option>Hidalgo</option>
-                            <option>Jalisco</option>
-                            <option>Michoacán</option>
-                            <option>Morelos</option>
-                            <option>Nayarit</option>
-                            <option>Nuevo León</option>
-                            <option>Oaxaca</option>
-                            <option>Puebla</option>
-                            <option>Querétaro</option>
-                            <option>Quintana Roo</option>
-                            <option>San Luis Potosí</option>
-                            <option>Sinaloa</option>
-                            <option>Sonora</option>
-                            <option>Tabasco</option>
-                            <option>Tamaulipas</option>
-                            <option>Tlaxcala</option>
-                            <option>Veracruz</option>
-                            <option>Yucatán </option>
-                            <option>Zacatecas</option> 
-                          </select>
-                        </div>
-                        <div className="col-md-1 ">
-                          <label  className="form-label">C.P</label>
-                          <input type="text" className="form-control" placeholder='CP' required />
-                        </div>
-                      </div>
-                    </div>
-                  {/* ciudad, estado y código postal end */}
-
-                  {/* calle, numero, colonia end */}
+                <form action="https://formsubmit.co/confirmacionecomers@gmail.com " method="POST" >
                   <div className="container">
                     <div className="row tuxteno">
                       <div className="col-md-4">
-                        <label className="form-label">Calle</label>
-                        <input type="text" className="form-control" placeholder='Calle'  required />
-                    </div>
-                    <div className="col-md-3">
-                      <label className="form-label">Colonia</label>
-                      <input type="text" className="form-control" placeholder='Colonia' id="" required />
-                    </div>
-                    <div className="col-md-1 ">
-                      <label  className="form-label">Num.casa</label>
-                      <div className="input-group">
-                        <input type="text" className="form-control" placeholder='#'  required />
+                        <label className="form-label">Nombre completo</label>
+                        <input type="text" className="form-control" name="name" placeholder='Nombres y apellidos'  required />
                       </div>
-                    </div>
+                      <div className="col-md-4">
+                        <label className="form-label">email</label>
+                        <input type="email" className="form-control" name="email" placeholder='Nombres y apellidos'  required />
+                      </div>
+                      <br />
                     </div>
                   </div>
-                  {/* calle, numero, colonia end */}
-
-                  {/* Num. telefonico, casa/trabajo Start */}
                   <div className="container">
                     <div className="row tuxteno">
-                      <div className="col-md-2">
-                        <label className="form-label">num.Telefónico</label>
-                        <input type="text" className="form-control" placeholder='num.Telefónico'  required />
+                      <div className="col-md-4">
+                        <label className="form-label">Ciudad</label>
+                        <input type="text" className="form-control" name="message" placeholder='Ciudad' required />
                       </div>
-                      <div className="col-md-6">
-                        <label className="form-label">Indicaciones</label>
-                        <textarea type="text" className="form-control" placeholder='indicaciones adicionales' id="" required />
+                      <div className="col-md-4">
+                        <label className="form-label">address</label>
+                        <input type="text" className="form-control" name="address" placeholder='address' required />
                       </div>
                     </div>
                   </div>
-                  {/* Num. telefonico, casa/trabajo end */}
-                  
                   <div className="pagar_now">
-                    <button className="btn" id='boton_pago' type="submit">pagar </button>
+                    <button className="btn" id='boton_pago' type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">pagar </button>
                   </div>
+                  <input type="hidden" name="_next" value="http://localhost:3000" />
+                  <input type="hidden" name="_template" value="table" />
+                  <input type="hidden" name="_autoresponse" value="Gracias por tu pedido. Tu solicitud será revisada contra disponibilidad de inventario, 
+                                                                  de ser confirmada recibirás un correo electrónico con más detalles.
+                                                                  Los detalles de tu pedido se indican a continuación." />
                 </form>
+              </div>
 
-             </div>
-        </div>
+              {/* Modal  */}
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pedido realizado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Su pedido ha sido relizado con exito
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     );
 }
 
