@@ -75,9 +75,8 @@
   color: #1a1b1f;
   opacity: 0.6;
   margin-bottom: 10px;
-  margin-right: 23px;
-  margin-left: 23px;
-  width: 43%;
+  margin-left: 13px;
+  width: 44%;
 }
   /*-----secc 3-----*/
   .img{
@@ -122,13 +121,26 @@
     line-height: 26px;
     letter-spacing: 0px;
   }
+  @media (max-width: 58em) {
+    .sectionabout{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .abouttext{
+      width: 930px;
+      margin-bottom: 30px;
+    }
+  }
   /* ---------------------------------ABOUT US END --------------------*/
   /*----------------NAV------------*/
   .sectionavb{
       margin-left: 30px;
       margin-right: 30px;
-}
-  .headernav {
+    }
+    .logonav:hover{
+        color: #b02222;
+    }
+    .headernav {
       background-color: #fff;
       font-weight: 500;
       position: sticky;
@@ -188,7 +200,7 @@
     .headernav .menu {
       clear: both;
       max-height: 0;
-      transition: max-height .2s ease-out;
+       
     }
     .headernav .menu-icon {
       cursor: pointer;
@@ -231,8 +243,7 @@
     }
     
     .headernav .menu-btn:checked ~ .menu {
-      max-height: 800px;
-      height: 447px;
+      max-height: 500px;
     }
     
     .headernav .menu-btn:checked ~ .menu-icon .navicon {
