@@ -123,12 +123,23 @@
   }
   @media (max-width: 58em) {
     .sectionabout{
-      margin-left: 0;
-      margin-right: 0;
+      margin-left:0;
+      margin-right:0;
     }
     .abouttext{
       width: 930px;
       margin-bottom: 30px;
+    }
+    .aboutsubt{
+      margin: 4px;
+    }
+    .abouttitle2 h1{
+      text-align: center;
+      font-size: 36px;
+    }
+    .abouttitle2 p{
+      text-align: center;
+      font-size: 18px;
     }
   }
   /* ---------------------------------ABOUT US END --------------------*/
