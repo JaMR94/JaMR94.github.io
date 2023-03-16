@@ -4,12 +4,12 @@ const Aboutourphilosophy = () => {
 <div className="sectionabout">
           <div className="container">
             <div className="aboutphilosophy">
-              <h1>Our Philosophy</h1>
+              <h1>Nuestra filosofía</h1>
               <div className="aboutsubt2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+              Nuestra filosofía es la de dar siempre el mejor trato y servicio a nuestros clientes, para así crearles una nueva pagina favorita en donde ellos siempre puedan obtener lo que buscan sin ningún problema.
               </div>
               <div className="abouttextdr">
-              ― Dr. Seuss, Oh, The Places You'll Go!
+              - Dr. Seuss, ¡Oh, cuán lejos llegarás!.
               </div>
             </div>
           </div>
