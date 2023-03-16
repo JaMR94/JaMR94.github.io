@@ -6,6 +6,8 @@ import DescriptionProdicts from '@/components/componentsDetaillProducts/descript
 import SelectDescriptionProducts from '@/components/componentsDetaillProducts/selectDescriptionProducts'
 import ButomSelectProducts from '@/components/componentsDetaillProducts/butomSelectProducts'
 import styles from '../styles/butomSelectProducts.module.css';
+import { useRouter } from 'next/router';
+import DetaillProducts from './DetaillProducts/[id]'
 
 // import Ejemplo from '@/components/componentsDetaillProducts/ejemplo'
 
@@ -13,6 +15,14 @@ import styles from '../styles/butomSelectProducts.module.css';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home () {
+  const router = useRouter();
+
+  if (!props.users) {
+    router.reload();
+    return null;
+  }
+
+
   return (
       <Layout>
         <div className='container'id={styles.FeatContainer}>
@@ -37,3 +47,14 @@ export default function Home () {
       </Layout>
   )
 }
+
+DetaillProducts.getInitialProps = async (ctx) => {
+  try {
+    const res = await fetch('https://ecommerce-unid.000webhostapp.com/products');
+    const data = await res.json();
+    return { users: data };
+  } catch (error) {
+    console.error(error);
+    return { users: null };
+  }
+};

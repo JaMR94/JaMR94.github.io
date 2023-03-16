@@ -4,12 +4,15 @@ import Cardsection from '@/components/Products/cardsection'
 import Layout from '@/components/Layouts/Layout'
 import ProductsTitle from '@/components/Products/Products_title'
 import Menunav from '@/components/Products/menunav'
-
+import { useRouter } from 'next/router';
 
 const Productos = (props) =>{
-      // console.log(props)
-      console.log(props.users.rows)
+  const router = useRouter();
 
+  if (!props.users) {
+    router.reload();
+    return null;
+  }
 
   return (
     <main>
@@ -38,10 +41,15 @@ const Productos = (props) =>{
 //  Esto se hace antes de que la página sea renderizada para que los datos estén 
 //  disponibles cuando se renderice la página.
 
-Productos.getInitialProps = async (ctx) =>{
-  const res = await fetch('https://ecommerce-unid.000webhostapp.com/products');
-  const data = await res.json();
-  return {users: data}
-}
+Productos.getInitialProps = async (ctx) => {
+  try {
+    const res = await fetch('https://ecommerce-unid.000webhostapp.com/products');
+    const data = await res.json();
+    return { users: data };
+  } catch (error) {
+    console.error(error);
+    return { users: null };
+  }
+};
 
 export default Productos;
