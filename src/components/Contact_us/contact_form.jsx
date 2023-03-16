@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 
+
 const ContactForm = () => {
 
     const form = useRef();
@@ -15,6 +16,8 @@ const ContactForm = () => {
         }, (error) => {
             console.log(error.text);
         });
+        alert("Email enviado:)");
+        e.target.reset();
     };
 
     return (
@@ -42,7 +45,7 @@ const ContactForm = () => {
                     </div>
                         <div className="container boton_mandar">
                             <button className="btn" type='submit' id='mandar'>mandar</button>
-                            <input type="submit" value="Send"/>
+                            
                         </div>
                 </div>
             </form>
