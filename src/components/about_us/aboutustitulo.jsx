@@ -5,11 +5,11 @@ const Aboutustitulo = () => {
          <div className="aboutheader">
          <div className="aboutcontenido">
           <div className="abouttitle">
-           About Us
+           Quienes somos
            <br />
           </div>
          <div className="aboutsubt">
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         Somos una compañía que ofrece productos de buena calidad a un precio razonable mediante las compras en línea.
          </div>
          </div>
         </div>
