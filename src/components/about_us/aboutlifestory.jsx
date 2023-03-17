@@ -15,9 +15,7 @@ const Aboutlifestory = () => {
           Somos una compañía que ofrece productos de buena calidad a un precio razonable mediante compras en línea. Nosotros le ofrecemos un servicio de entrega de calidad, por lo cual puede asegurarse de que su envió llegara en tiempo y forma, y si se le presenta un problema o duda respecto a nuestros productos y servicios puede comunicarse con nuestro rápido y responsivo servicio al cliente.
           </div>
           <div className="col-sm-6 col-md-5 abouttext">
-          Opiniones
-          Pr_Goomez: Mi compra llego a mi chaletito en el tiempo esperado y sin ningún problema con el paquete. 4.5/5
-          Giuseppe133: Ofrecen unos productos de una buenísima calidad, aunque el tiempo de espera de tu pedido puede ser algo largo dependiendo de donde vivas. 3.5/5
+         Nuestros productos están hechos del mejor material posible, con la mayor dedicación de nuestros productores y a la vez ofrecemos productos de marcas conocidas para tener una mayor variedad para acomodarnos hacia los gustos de nuestros clientes.
 
           </div>
           </div>
