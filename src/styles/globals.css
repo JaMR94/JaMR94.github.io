@@ -109,7 +109,7 @@ a {
   line-height: 26px;
 }
 
-@media (min-width: 320px) and (max-width: 568px) {
+@media screen and (max-width: 768px) {
   
   .seccion{
     flex-direction: column;
@@ -119,12 +119,5 @@ a {
   }
 
 }
-@media (min-width: 570px) and (max-width: 1070px){
-  .seccion{
-    flex-direction: column;
-    display: flex;
-    text-align: center;
-    margin-bottom: 15%;
-  }
-}
+
 
