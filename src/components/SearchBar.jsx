@@ -1,20 +1,23 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { useRouter } from 'next/router';
 import styles from '../styles/SearchBar.module.css';
+import DetaillProducts from '@/pages/DetaillProducts/[id]';
 
 export default function SearchBar() {
+  const router = useRouter();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [selectedResultIndex, setSelectedResultIndex] = useState(-1);
 
   const handleSearch = async () => {
-    const url = `https://www.googleapis.com/books/v1/volumes?q=${query}`;
-
     try {
-      const response = await axios.get(url);
-      const data = response.data.items;
-      setResults(data);
+      const response = await fetch(`https://ecommerce-unid.000webhostapp.com/products?search=${query}`);
+      const data = await response.json();
+      const filteredProducts = data.rows.filter(product =>
+        product.product_name.toLowerCase().includes(query.toLowerCase())
+      );
+      setResults(filteredProducts);
     } catch (error) {
       console.error(error);
     }
@@ -23,6 +26,7 @@ export default function SearchBar() {
   const handleProductSelect = (product) => {
     setSelectedProduct(product);
     setSelectedResultIndex(-1);
+    router.push(`/DetaillProducts/${product.id}`);
   };
 
   const handleKeyDown = (e) => {
@@ -50,27 +54,13 @@ export default function SearchBar() {
       <button className={styles.button} onClick={handleSearch}>Buscar</button>
 
       {results.length > 0 && (
-        <ul style={{ listStyle: "none", background: "#ccc" }}>
+        <ul className={styles["results-list"]}>
           {results.map((result, index) => (
-            <li
-              key={result.id}
-              style={{ color: "black" }}
-              onClick={() => handleProductSelect(result)}
-              onMouseOver={() => setSelectedResultIndex(index)}
-              className={selectedResultIndex === index ? styles["selected-result"] : ""}
-            >
-              {result.volumeInfo.title}
+            <li key={result.id} style={{ color: "black" }} onClick={() => handleProductSelect(result)} onMouseOver={() => setSelectedResultIndex(index)} className={selectedResultIndex === index ? styles["selected-result"] : ""}>
+              {result.product_name}
             </li>
           ))}
         </ul>
-      )}
-
-      {selectedProduct && (
-        <div>
-          <h2>{selectedProduct.volumeInfo.title}</h2>
-          <p>{selectedProduct.volumeInfo.description}</p>
-          <img src={selectedProduct.volumeInfo.imageLinks.thumbnail} alt={selectedProduct.volumeInfo.title} />
-        </div>
       )}
     </div>
   );
