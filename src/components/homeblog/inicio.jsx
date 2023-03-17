@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import SearchBar from "../SearchBar";
 
 const inicio = () => {
   return (
@@ -11,8 +12,6 @@ const inicio = () => {
         </p>
 
         <div className="mid">
-        <Link className="btn" id="boton_inicio" href="/Productos" role="button">EXPLORA</Link>
-
         </div>
       </div>
     </div>
