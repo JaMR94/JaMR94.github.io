@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import styles from '../styles/SearchBar.module.css';
+import DetaillProducts from '@/pages/DetaillProducts/[id]';
 
 export default function SearchBar() {
+  const router = useRouter();
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -9,7 +12,7 @@ export default function SearchBar() {
 
   const handleSearch = async () => {
     try {
-      const response = await fetch("https://ecommerce-unid.000webhostapp.com/products");
+      const response = await fetch(`https://ecommerce-unid.000webhostapp.com/products?search=${query}`);
       const data = await response.json();
       const filteredProducts = data.rows.filter(product =>
         product.product_name.toLowerCase().includes(query.toLowerCase())
@@ -23,6 +26,7 @@ export default function SearchBar() {
   const handleProductSelect = (product) => {
     setSelectedProduct(product);
     setSelectedResultIndex(-1);
+    router.push(`/DetaillProducts/${product.id}`);
   };
 
   const handleKeyDown = (e) => {
@@ -50,27 +54,13 @@ export default function SearchBar() {
       <button className={styles.button} onClick={handleSearch}>Buscar</button>
 
       {results.length > 0 && (
-        <ul style={{ listStyle: "none", background: "#ccc" }}>
+        <ul className={styles["results-list"]}>
           {results.map((result, index) => (
-            <li
-              key={result.id}
-              style={{ color: "black" }}
-              onClick={() => handleProductSelect(result)}
-              onMouseOver={() => setSelectedResultIndex(index)}
-              className={selectedResultIndex === index ? styles["selected-result"] : ""}
-            >
+            <li key={result.id} style={{ color: "black" }} onClick={() => handleProductSelect(result)} onMouseOver={() => setSelectedResultIndex(index)} className={selectedResultIndex === index ? styles["selected-result"] : ""}>
               {result.product_name}
             </li>
           ))}
         </ul>
-      )}
-
-      {selectedProduct && (
-        <div>
-          <h2>{selectedProduct.product_name}</h2>
-          <p>{selectedProduct.description}</p>
-          <img src={selectedProduct.image} alt={selectedProduct.product_name} />
-        </div>
       )}
     </div>
   );
