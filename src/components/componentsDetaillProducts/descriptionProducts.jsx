@@ -3,8 +3,8 @@ import styles from '../../styles/butomSelectProducts.module.css';
 const DescriptionProdicts = () => {
     return (
         <div class="col">
-            <p className={styles.LetterP}>price</p>
-            <p className={styles.LetterP}>stock</p>
+            <p className={styles.LetterP}>Price</p>
+            <p className={styles.LetterP}>Stock</p>
         </div>
     );
   }

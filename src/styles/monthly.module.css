@@ -2,7 +2,6 @@
   h2.monthly{
     font-size: 36px;
     line-height: 50px;
-    font-weight: 400;
   }
   .suscribe{
     margin-top: 10px;
@@ -16,7 +15,7 @@
     font-size: 14px;
     margin: auto;
     flex-direction: column;
-    width: 30%;
+    width: 45%;
     min-width:389px;
     color: #1a1b1f;
     opacity: 0.6;
@@ -37,22 +36,15 @@
     width: 330px;
     margin-right: 10px;
     margin-bottom: 0px;
-    padding: 9px 8px;
+    padding: 9px 17px;
     border: 1px solid #eeeded;
     background-color: #fff;
     border-radius: 0px;
     font-size: 14px;
     line-height: 26px;
     opacity: 0.6;
-    align-items: center;
+    align-items: left;
     color: #1a1b1f;
-  }
-
-  @media (max-width:472px){
-   .submit{
-    margin-top: 15px;
-    width: auto;
-   }
   }
   
   .submit{
@@ -73,19 +65,34 @@
   }
   
 
-  @media screen and (max-width: 700px) {
-    .ui.mobile.ad {
-       display: block;
-     }
-      container-fluid.row {
-      display: block;
-      height: 50vh;
+  @media (min-width: 320px) and (max-width: 568px) {
+    
+    .submit{
+      margin-top: 15px;
+      width: auto;
     }
-    .enteremail-container{
-      display: block;
-      height: 50vh;
+    .monthly{
+      margin-left: 3%;
+      text-align: center;
+    }
+
+    .news{
+      display: flex;
+      align-content: center;
+      width: 70%;
+      margin-left: 17%;
+    }
+    .enteremail{
+      display: flex;
       width: 100%;
       overflow: hidden;
       position: relative;
-  }
+    }
+    .submit{
+      width: 100%;
+    }
+}
+
+@media ( min-width: 321px ) and ( max-width: 568px ){
+  
 }
