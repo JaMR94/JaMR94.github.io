@@ -3,6 +3,8 @@
 {/* <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> */}
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import styles from '../styles/Carrito.module.css';
 
 const Carrito = () => {
   const [items, setItems] = useState([]);
@@ -34,6 +36,9 @@ const Carrito = () => {
         ) : (
           <p>Your cart is empty</p>
         )}
+        <Link href="/checkout" passHref>
+          <button className={styles.checkoutButton}>Go to checkout</button>
+        </Link>
       </div>
     </div>
   );
