@@ -47,8 +47,11 @@
 
 /* SPACE CSS STYLE START */
 .space{
-  padding-bottom: 100px;
-  padding-left: 7%
+  max-width: 1165px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+  width: 100%;
 }
 .Espacio{
   padding-bottom: 20px;

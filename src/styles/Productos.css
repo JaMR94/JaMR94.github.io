@@ -55,6 +55,15 @@
     #desc_corta{
       line-height: 20px;
     }
+    .Espacio3{
+      text-align: center;
+    }
+    .Espacio{
+      text-align: center;
+    }
+    .Espacio2{
+      text-align: center;
+    }
   }
   
   .claro{

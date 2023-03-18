@@ -4,8 +4,8 @@ const Features = () => {
   return (
     <div>
       <div className="container feat1">
-        <h2 className="text-center">Featured Products</h2>
-        <p className="text-center font3 ">Check out new and popular products</p>
+        <h2 className="text-center">Últimas existencias</h2>
+        <p className="text-center font3 ">Compre el suyo antes de que se acaben</p>
       </div>
     </div>
   );
