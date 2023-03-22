@@ -1,7 +1,13 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-const LoginPage = () => {
+var today = new Date();
+var day = today.getDate();
+var month = today.getMonth() + 1;
+var year = today.getFullYear();
+const fechaActual = (`${year}-${month}-${day}`);
+
+const RegisterPage = () => {
 
   const router = useRouter()
 
@@ -10,9 +16,11 @@ const LoginPage = () => {
       last_name: '',
       username: '',
       email: '',
+      address: '',
       password: '',
       phone_number: '',
-      birth_date: ''
+      birth_date: '',
+      creation_date: fechaActual
 
   })
 
@@ -31,21 +39,14 @@ const LoginPage = () => {
   const postData = async (form) => {
     try{
         console.log(form);
-          const res = await fetch('https://ecommerce-unid.000webhostapp.com/users', {
-            method: 'POST',
-            headers: {
-              "Content-type": "application/json"
-            },
-            body: JSON.stringify(form),
-          });
-          
+        const options = {
+          method: 'POST',
+          body: JSON.stringify(form)
+        };
+          const res = await fetch('http://ecommerce-unid.000webhostapp.com/users', options);
           const data = await res.json();
           console.log(data);
-
-
-
-          router.push('/')
-
+        router.push('/')
     } catch(error){
         console.log(error);
     }
@@ -90,6 +91,10 @@ const LoginPage = () => {
                   <input type="date" name="birth_date" className="form-control" value={form.birth_date} onChange={handleChange}  required/>
                   <label>Cumpleaños</label><br/>
                 </div>
+                <div className="form-floating">
+                  <input type="text" name="address" className="form-control" value={form.address} onChange={handleChange}  required/>
+                  <label>Dirección</label><br/>
+                </div>
 
                 <button className="w-100 btn btn-lg btn-dark" id="RegisterPage_ButtonRegister" type="submit">Crear cuenta</button>
               </form>
@@ -97,5 +102,4 @@ const LoginPage = () => {
             </main>
           );
     }
-    
-  export default LoginPage
+  export default RegisterPage
